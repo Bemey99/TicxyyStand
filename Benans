@@ -125,7 +125,7 @@ Create("A!",function()
     end
 end)
 
-CreateTargetAbility("!Frame",function()
+CreateTargetAbility("Frame!",function()
     if TARGET then
         Stop()
         noclip = true
