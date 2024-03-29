@@ -158,3 +158,17 @@ end)
 Create('Pose3',function()
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Set Posture To Posture3 "..CustomName.."!", 'All');
 end)
+
+Create('WhatFlyMode!',function()
+    if FlyMode == 'Heaven' then
+    Chat("FlyMode : Heaven")
+  elseif FlyMode == 'FlyV1' then
+    Chat("FlyMode : FlyV1")
+  elseif FlyMode == 'FlyV2' then
+    Chat("FlyMode: FlyV2")
+  elseif FlyMode == 'Glide' then
+    Chat("FlyMode : Glide")
+  eiseif FlyMode == 'Hover' then
+    Chat("FlyMode : Hover")
+    end
+end)
