@@ -1,5 +1,67 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
 
+function Barrage()
+    if Sounds == true and StandMode == 'Star Platinum : OverHeaven' then
+        play(6181278583,false,true)
+    elseif Sounds == true and StandMode == "Star Platinum,Za Warudo!" then
+        play(6181278583,false,true)
+    elseif Sounds == true and StandMode == 'Star Platinum: The World' then
+        play(6181278583,false,true)
+    elseif Sounds == true and StandMode == "TheWorld" then
+        play(6889746326,false,true)
+    end
+    Stop()
+    noclip = true
+    barragepunch = true	
+    barragepos = true
+    repeat rs.Stepped:Wait()
+        Hit(false)
+        for i,v in pairs(STAND.Character:WaitForChild("Humanoid"):GetPlayingAnimationTracks()) do
+            if (v.Animation.AnimationId:match("rbxassetid://3541114300")) or
+                (v.Animation.AnimationId:match("rbxassetid://13850634687")) or 
+                (v.Animation.AnimationId:match("rbxassetid://13850660986")) or 
+                (v.Animation.AnimationId:match("rbxassetid://2788309317")) or 
+                (v.Animation.AnimationId:match("rbxassetid://2788308661")) or 
+                (v.Animation.AnimationId:match("rbxassetid://2788311138")) or 
+                (v.Animation.AnimationId:match("rbxassetid://2788309982")) then 
+                v:Stop();
+            end
+        end
+        Barraging1:Play()
+        Barraging2:Stop()
+        Barraging3:Stop()
+        Barraging4:Stop()	
+        Barraging1:AdjustSpeed(8.15)
+        wait(0.013)
+        Barraging1:Stop()
+        Barraging2:Play()
+        Barraging3:Stop()
+        Barraging4:Stop()	
+        Barraging2:AdjustSpeed(8.15)
+        wait(0.013)
+        Barraging1:Stop()
+        Barraging2:Stop()
+        Barraging3:Play()
+        Barraging4:Stop()
+        Barraging3:AdjustSpeed(8.15)
+        wait(0.013)
+        Barraging1:Stop()
+        Barraging2:Stop()
+        Barraging3:Stop()
+        Barraging4:Play()
+        Barraging4:AdjustSpeed(8.15)
+    until barragepunch == false
+end
+
+function Nobarrage()
+    StopAudio()
+    wait()
+    if Sounds == true then
+        play(6603004272,true,true)
+    end
+    Summon()
+end
+
 Create('Сосk!',function()
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Want To See My Сосk 😏 🤫', 'All');
 end)
@@ -157,4 +219,16 @@ end)
 
 Create('Pose3',function()
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Set Posture To Posture3 "..CustomName.."!", 'All');
+end)
+
+Create('Barge!',function()
+    Chat("Barraging!")
+    wait(.2)
+    Barrage()
+end)
+
+Create('Summon!',function()
+    Chat("Stopped Barraging!")
+    wait(.2)
+    Nobarrage()
 end)
