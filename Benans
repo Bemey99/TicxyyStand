@@ -140,7 +140,3 @@ Create('UnCW!',function()
     wait(.2)
     game.ReplicatedStorage.MainEvent:FireServer("LeaveCrew")
 end)
-
-Create('Boxing?',function()
-   Chat(Style : '..STAND.DataFolder.Information.FightingStyle.Value)
-end)
