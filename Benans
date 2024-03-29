@@ -49,6 +49,32 @@ Arg('B!',function()
     end
 end)
 
+Arg('U!',function()
+    local GetPlayer = gplr(Arg)
+    if GetPlayer.Name == STAND.Name then
+        if ChatCmds == true then
+            Chat("My Position Has Been Set To Under "..CustomName.."!")
+        end
+        Pos = "Under"
+        if Sounds == true then
+            play(8655611378,true,true) 
+        end
+    end
+end)
+
+Arg('A!',function()
+    local GetPlayer = gplr(Arg)
+    if GetPlayer.Name == STAND.Name then
+        if ChatCmds == true then
+            Chat("My Position Has Been Set To Alt "..CustomName.."!")
+        end
+        Pos = "Alt"
+        if Sounds == true then
+            play(8655611378,true,true) 
+        end
+    end
+end)
+
 Create("l!",function()
     if ChatCmds == true then
         Chat("My Position Has Been Set To Left "..CustomName.."!")
@@ -79,7 +105,10 @@ Create("b!",function()
     end
 end)
 
-Create("U!",function()
+Create("u!",function()
+    if ChatCmds == true then
+        Chat("My Position Has Been Set To Under "..CustomName.."!")
+    end
     Pos = "Under"
     if Sounds == true then
         play(8655611378,true,true) 
@@ -87,6 +116,9 @@ Create("U!",function()
 end)
 
 Create("A!",function()
+    if ChatCmds == true then
+        Chat("My Position Has Been Set To Alt "..CustomName.."!")
+    end
     Pos = "Alt"
     if Sounds == true then
         play(8655611378,true,true) 
