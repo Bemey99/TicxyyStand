@@ -1,65 +1,46 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
 
-function Barrage()
-    if Sounds == true and StandMode == 'Star Platinum : OverHeaven' then
-        play(6181278583,false,true)
-    elseif Sounds == true and StandMode == "Star Platinum,Za Warudo!" then
-        play(6181278583,false,true)
-    elseif Sounds == true and StandMode == 'Star Platinum: The World' then
-        play(6181278583,false,true)
-    elseif Sounds == true and StandMode == "TheWorld" then
-        play(6889746326,false,true)
-    end
-    Stop()
-    noclip = true
-    barragepunch = true	
-    barragepos = true
-    repeat rs.Stepped:Wait()
-        Hit(false)
-        for i,v in pairs(STAND.Character:WaitForChild("Humanoid"):GetPlayingAnimationTracks()) do
-            if (v.Animation.AnimationId:match("rbxassetid://3541114300")) or
-                (v.Animation.AnimationId:match("rbxassetid://13850634687")) or 
-                (v.Animation.AnimationId:match("rbxassetid://13850660986")) or 
-                (v.Animation.AnimationId:match("rbxassetid://2788309317")) or 
-                (v.Animation.AnimationId:match("rbxassetid://2788308661")) or 
-                (v.Animation.AnimationId:match("rbxassetid://2788311138")) or 
-                (v.Animation.AnimationId:match("rbxassetid://2788309982")) then 
-                v:Stop();
-            end
-        end
-        Barraging1:Play()
-        Barraging2:Stop()
-        Barraging3:Stop()
-        Barraging4:Stop()	
-        Barraging1:AdjustSpeed(8.15)
-        wait(0.013)
-        Barraging1:Stop()
-        Barraging2:Play()
-        Barraging3:Stop()
-        Barraging4:Stop()	
-        Barraging2:AdjustSpeed(8.15)
-        wait(0.013)
-        Barraging1:Stop()
-        Barraging2:Stop()
-        Barraging3:Play()
-        Barraging4:Stop()
-        Barraging3:AdjustSpeed(8.15)
-        wait(0.013)
-        Barraging1:Stop()
-        Barraging2:Stop()
-        Barraging3:Stop()
-        Barraging4:Play()
-        Barraging4:AdjustSpeed(8.15)
-    until barragepunch == false
+function Dweld()
+local Stuff = 
+"RightHand",
+"LeftHand",
+"RightFoot",
+"LeftFoot",
+"Head"}
+pcall(function()
+for i, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+for z, BreakingStuff in ipairs(Stuff) do
+if v.Name == BreakingStuff then
+if v:FindFirstChildOfClass("Motor6D") then
+local Weld = v:FindFirstChildOfClass("Motor6D")
+Weld:Destroy()
+end
+end
+end
+end
+end)
 end
 
-function Nobarrage()
-    StopAudio()
-    wait()
-    if Sounds == true then
-        play(6603004272,true,true)
-    end
-    Summon()
+function defense()
+game:GetService("RunService"):BindToRenderStep("FOG", -1 , function()
+Dweld()
+rs.Heartbeat:Wait()
+if reversing == true then
+Move = Move - 50
+else
+Move = Move + 50
+end
+if Move >= 100 then
+reversing = true
+elseif Move < -100 then
+reversing = false
+end
+getHumanoid(STAND):ChangeState(16)
+for _,v in ipairs(STAND.Character:WaitForChild("Humanoid"):GetPlayingAnimationTracks()) do v:Stop() end
+if STAND.Character:FindFirstChild('Combat') then STAND.Character:FindFirstChild('Combat'):Activate() else STAND.Backpack:FindFirstChild('Combat').Parent = STAND.Character end
+getRoot(STAND).CFrame = CFrame.Angles(0,2*math.pi*delta,0)* CFrame.new(0,-10,-Move)+ getRoot(OWNER).Position 
+TpArm(CFrame.Angles(0,2*math.pi*delta,0)* CFrame.new(0,500,Move)+ getRoot(OWNER).Position )
+end)
 end
 
 Create('Сосk!',function()
@@ -221,14 +202,15 @@ Create('Pose3',function()
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Set Posture To Posture3 "..CustomName.."!", 'All');
 end)
 
-Create('Barge!',function()
-    Chat("Barraging!")
-    wait(.2)
-    Barrage()
-end)
-
-Create('Summon!',function()
-    Chat("Stopped Barraging!")
-    wait(.2)
-    Nobarrage()
+Create('protect!',function()
+    if Alt == false then
+        Stop()
+        noclip = true
+        defense()
+    elseif Alt == true then
+        wait(2)
+        Stop()
+        noclip = true
+        defense()
+    end
 end)
