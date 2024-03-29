@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Bemey99/ticxyy/XD/V4.3"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Bemey99/ticxyy/XD/main/V4.3"))()
 
 Create('Сосk!',function()
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Want To See My Сосk 😏 🤫', 'All');
