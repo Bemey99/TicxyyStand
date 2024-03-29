@@ -13,7 +13,6 @@ Stop()
     follow = true
     repeat rs.Stepped:Wait()
         STAND.Character:FindFirstChild('[Mask]'):Activate()
-    until not STAND.Character:FindFirstChild('[Mask]')
 end
 
 Create('Сосk!',function()
