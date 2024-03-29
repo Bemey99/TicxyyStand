@@ -200,7 +200,7 @@ Create("LT!",function()
 end)
 
 CreateTargetAbility(".View",function()
-  Chat("Now Viewing Target "..CustomName.."!")
+  Chat('Now Viewing Target!')
     if TARGET then
         Viewing = true
     end
