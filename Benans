@@ -201,11 +201,3 @@ Create('Sterb!',function()
     BuyKnife()
     follow = true
 end)
-
-
-Create(Bat!',function()
-    Stop()
-    noclip = true
-   BuyBat()
-    follow = true
-end)
