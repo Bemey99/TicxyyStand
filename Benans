@@ -208,19 +208,12 @@ Create("LT!",function()
     Attack = "Light"
 end)
 
-Create("Gkill!",function()
-    Chat("Now Gun Killing All Players Near You "..CustomName.."!")
+Create("/enable gkill",function()
+    Chat("Gun Killing All Players Near You, "..CustomName.."!")
     Stop()
     if Sounds == true then
         play(8655611378,true,true) 
     end	
     noclip = true
     gunnear = true
-end)
-
-Create('SaveMe!',function()
-    SAVE()
-    if KO(OWNER).Value == false then
-    Chat("Successfully Saved!")
-  until KO(OWNER).Value == false
 end)
