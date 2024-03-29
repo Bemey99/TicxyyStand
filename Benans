@@ -159,19 +159,6 @@ Create('Pose3',function()
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Set Posture To Posture3 "..CustomName.."!", 'All');
 end)
 
-Create('protect!',function()
-    if Alt == false then
-        Stop()
-        noclip = true
-        defense()
-    elseif Alt == true then
-        wait(2)
-        Stop()
-        noclip = true
-        defense()
-    end
-end)
-
 Create('.Glitch',function()
     Chat("Attempting To Glitch!")
     Stop()
@@ -197,4 +184,12 @@ Create("LT!",function()
         play(8655611378,true,true) 
     end
     Attack = "Light"
+end)
+
+CreateTargetAbility("!Stomp",function()
+    if TARGET then
+        Stop()
+        noclip = true
+        StompTarget = true
+    end
 end)
