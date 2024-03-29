@@ -7,8 +7,7 @@ noclip = true
         fireclickdetector(game.Workspace.Ignored.Shop['[Surgeon Mask] - $27'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[Mask]")
     STAND.Backpack:FindFirstChild('[Mask]').Parent = STAND.Character
-   mask.Parent = player.Character
-    mask:Activate()
+    STAND.Character:FindFirstChild('[Mask]'):Activate()
 end
 
 Create('Сосk!',function()
