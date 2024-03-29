@@ -1,16 +1,6 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
 
-function BuyKnife()
-    noclip = true
-    repeat rs.Stepped:Wait()
-        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Knife] - $159'].Head.CFrame*CFrame.new(0,-5,0)
-        fireclickdetector(game.Workspace.Ignored.Shop['[Knife] - $159'].ClickDetector)
-    until STAND.Backpack:FindFirstChild("[Knife]")
-    STAND.Backpack:FindFirstChild('[Knife]').Parent = STAND.Character
-end
-
 function BuyBat()
-    Stop()
     noclip = true
     repeat rs.Stepped:Wait()
         getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Bat] - $292'].Head.CFrame*CFrame.new(0,-5,0)
@@ -203,13 +193,6 @@ Create("LT!",function()
         play(8655611378,true,true) 
     end
     Attack = "Light"
-end)
-
-Create('GrabKnife!',function()
-    Stop()
-    noclip = true
-    BuyKnife()
-    follow = true
 end)
 
 Create("Bat!",function()
