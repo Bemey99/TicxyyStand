@@ -1,25 +1,11 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
 
-Create('Lard!',function()
-    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Larding, Daddy 🤫', 'All');
+Create('Сосk!',function()
+    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Want To See My Сосk, Mommy🤫', 'All');
 end)
 
-Create('Revolver!',function()
-    Stop()
-    repeat rs.Stepped:Wait()
-        getRoot(STAND).CFrame=game.Workspace.Ignored.Shop["[Revolver] - $1379"].Head.CFrame
-        fireclickdetector(game.Workspace.Ignored.Shop["[Revolver] - $1379"].ClickDetector)
-    until STAND.Backpack:FindFirstChild("[Revolver]")
-    game.Players.LocalPlayer.Backpack:FindFirstChild("[Revolver]").GripPos = Vector3.new(0,-7,-7)
-    getRoot(STAND).CFrame=game.Workspace.Ignored.Shop['6 [Revolver Ammo] - $80'].Head.CFrame*CFrame.new(0,-5,0)
-        fireclickdetector(game.Workspace.Ignored.Shop["6 [Revolver Ammo] - $80"].ClickDetector) wait(1)
-        fireclickdetector(game.Workspace.Ignored.Shop["6 [Revolver Ammo] - $80"].ClickDetector) wait(1)
-        fireclickdetector(game.Workspace.Ignored.Shop["6 [Revolver Ammo] - $80"].ClickDetector) wait(1)
-        fireclickdetector(game.Workspace.Ignored.Shop["6 [Revolver Ammo] - $80"].ClickDetector) wait(1)
-        fireclickdetector(game.Workspace.Ignored.Shop["6 [Revolver Ammo] - $80"].ClickDetector) wait(1)
-        fireclickdetector(game.Workspace.Ignored.Shop["6 [Revolver Ammo] - $80"].ClickDetector) wait(1)
-        fireclickdetector(game.Workspace.Ignored.Shop["6 [Revolver Ammo] - $80"].ClickDetector) wait(1)
-        fireclickdetector(game.Workspace.Ignored.Shop["6 [Revolver Ammo] - $80"].ClickDetector)
-    follow = true
-end)
+Create('Ban!',function()
+    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Perma-Ban in 20 Seconds.', 'All');
+wait(20)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Bemey99/GodMode/main/DaHood/Workint2024/March"))()
 end)
