@@ -1,0 +1,21 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
+
+Create('Lard!',function()
+    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Larding, Daddy 🤫', 'All');
+end)
+
+Create('Owner!',function()
+    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Mаdе By Tiсхуу', 'All');
+wait(1)
+    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('dіѕсоrd.gg/tiсхуу', 'All');
+end)
+
+Create('Rev!',function()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Revolver] - $1379'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Revolver] - $1379'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Revolver]")
+    STAND.Backpack:FindFirstChild('[Revolver]').Parent = STAND.Character
+end
+end)
