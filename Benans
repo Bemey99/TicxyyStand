@@ -147,29 +147,17 @@ Create('SumAud!',function()
     Chat('Finished Summon Audio!')
 end)
 
-Create('P1',function()
+Create('Pose1',function()
     Chat("Set Posture To Posture1 "..CustomName.."!")
-    wait(.2)
-    pose1()
-    if Sounds == true then
-        play(8655611378,true,true) 
     end
 end)
 
-Create('P2',function()
+Create('Pose2',function()
     Chat("Set Posture To Posture2 "..CustomName.."!")
-    wait(.2)
-    pose2()
-    if Sounds == true then
-        play(8655611378,true,true) 
     end
 end)
 
-Create('P3',function()
+Create('Pose3',function()
     Chat("Set Posture To Posture3 "..CustomName.."!")
-    wait(.2)
-    pose3()
-    if Sounds == true then
-        play(8655611378,true,true) 
     end
 end)
