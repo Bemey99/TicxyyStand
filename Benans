@@ -249,7 +249,7 @@ Create('SumAud!',function()
 end)
 
 Create('P1',function()
-    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Set Posture To Posture1 "..CustomName.."!', 'All');
+    Chat("Set Posture To Posture1 "..CustomName.."!")
     wait(.2)
     pose1()
     if Sounds == true then
@@ -258,7 +258,7 @@ Create('P1',function()
 end)
 
 Create('P2',function()
-    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Set Posture To Posture2 "..CustomName.."!', 'All');
+    Chat("Set Posture To Posture2 "..CustomName.."!")
     wait(.2)
     pose2()
     if Sounds == true then
@@ -267,7 +267,7 @@ Create('P2',function()
 end)
 
 Create('P3',function()
-    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Set Posture To Posture3 "..CustomName.."!', 'All');
+    Chat("Set Posture To Posture3 "..CustomName.."!")
     wait(.2)
     pose3()
     if Sounds == true then
