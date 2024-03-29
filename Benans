@@ -148,13 +148,13 @@ Create('SumAud!',function()
 end)
 
 Create('Pose1',function()
-    Chat("Set Posture To Posture1 "..CustomName.."!")
+    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Set Posture To Posture3 "..CustomName.."!", 'All');
 end)
 
 Create('Pose2',function()
-    Chat("Set Posture To Posture2 "..CustomName.."!")
+    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Set Posture To Posture2 "..CustomName.."!", 'All');
 end)
 
 Create('Pose3',function()
-    Chat("Set Posture To Posture3 "..CustomName.."!")
+    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Set Posture To Posture3 "..CustomName.."!", 'All');
 end)
