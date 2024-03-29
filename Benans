@@ -210,17 +210,3 @@ Create('PosCheck!',function()
    Chat("Pos : Alt")
     end
 end)
-
-Create('FlyCheck!',function()
-    if FlyMode == "Heaven" then
-   Chat("Fly : Heaven")
-    elseif FlyMode == "FlyV1" then
-   Chat("Fly : FlyV1")
-    elseif FlyMode == "FlyV2" then
-   Chat(Fly : FlyV2")
-    elseif FlyMode == "Glide" then
-   Chat("Fly : Glide")
-    elseif FlyMode == "Hover" then
-   Chat("Fly : Hover")
-    end
-end)
