@@ -185,8 +185,3 @@ Create("LT!",function()
     end
     Attack = "Light"
 end)
-
-Create('Gun!',function()
-    wait(8)
-    Chat("Successfully Bought Gun, "..CustomName.."!")
-end)
