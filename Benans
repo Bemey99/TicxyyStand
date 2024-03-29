@@ -126,6 +126,7 @@ Create("A!",function()
 end)
 
 Create('CW!',function()
+  if ChatCmds == true then
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Joining Crew!', 'All');
     wait(1)
     game.ReplicatedStorage.MainEvent:FireServer("JoinCrew",CrewID) 
@@ -134,6 +135,7 @@ Create('CW!',function()
 end)
 
 Create('UnCW!',function()
+  if ChatCmds == true then
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Leaving Crew!', 'All');
     wait(.2)
     game.ReplicatedStorage.MainEvent:FireServer("LeaveCrew")
