@@ -52,6 +52,55 @@ local function pose1()
     end
 end
 
+local function pose2()
+    if Posing2 == true then
+        rs:UnbindFromRenderStep("POSING")
+        Posing2 = false
+        Pose2:Stop(0.5)
+    else
+        Posing2 = true
+        rs:BindToRenderStep("POSING",-1 ,function()
+            pcall(function()
+                if Posing2 == true then
+                    if not Pose2.IsPlaying then
+                        Pose2:Play();
+                        Pose2:AdjustSpeed(0);
+                        Pose2.TimePosition = 0.42;
+                    end
+                end
+            end)
+        end)
+    end
+end
+
+local function pose3()
+    if Posing3 == true then
+        rs:UnbindFromRenderStep("POSING")
+        Posing3 = false
+        Pose3:Stop(0.5)
+    else
+        Posing3 = true
+        rs:BindToRenderStep("POSING",-1 ,function()
+            pcall(function()
+                if Posing3 == true then
+                    for i,v in pairs(STAND.Character:WaitForChild("Humanoid"):GetPlayingAnimationTracks()) do
+                        if (v.Animation.AnimationId:match("rbxassetid://3541114300")) or
+                            (v.Animation.AnimationId:match("rbxassetid://3084858603")) or 
+                            (v.Animation.AnimationId:match("rbxassetid://13850634687")) then
+                            v:Stop();
+                        end
+                    end
+                    if not Pose3.IsPlaying then
+                        Pose3:Play();
+                        Pose3:AdjustSpeed(0);
+                        Pose3.TimePosition = 0.85;
+                    end
+                end
+            end)
+        end)
+    end
+end
+
 Create('Сосk!',function()
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Want To See My Сосk 😏 🤫', 'All');
 end)
@@ -200,7 +249,27 @@ Create('SumAud!',function()
 end)
 
 Create('P1',function()
+    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Set Posture To Posture1 ".. CustomName .."!', 'All');
+    wait(.2)
     pose1()
+    if Sounds == true then
+        play(8655611378,true,true) 
+    end
+end)
+
+Create('P2',function()
+    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Set Posture To Posture2 ".. CustomName .."!', 'All');
+    wait(.2)
+    pose2()
+    if Sounds == true then
+        play(8655611378,true,true) 
+    end
+end)
+
+Create('Summon!',function()
+    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Set Posture To Posture3 ".. CustomName .."!', 'All');
+    wait(.2)
+    pose3()
     if Sounds == true then
         play(8655611378,true,true) 
     end
