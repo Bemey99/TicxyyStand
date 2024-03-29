@@ -1,23 +1,5 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
 
-function Hiding()
-noclip = true
-
-repeat 
-    rs.Stepped:Wait()
-    getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Surgeon Mask] - $27'].Head.CFrame*CFrame.new(0,-5,0)
-    fireclickdetector(game.Workspace.Ignored.Shop['[Surgeon Mask] - $27'].ClickDetector)
-until STAND.Backpack:FindFirstChild("[Mask]")
-
-STAND.Backpack:FindFirstChild('[Mask]').Parent = STAND.Character
-
--- Activate '[Mask]'
-local mask = STAND.Character:FindFirstChild("[Mask]")
-if mask then
-    -- Add your activation code here
-    mask.Activate() -- Replace this with the actual activation function if it exists
-end
-
 function Hide()
 noclip = true
     repeat rs.Stepped:Wait()
@@ -214,5 +196,5 @@ Create("LT!",function()
 end)
 
 Create('Mask!',function()
-    Hiding()
+    Hide()
 end)
