@@ -1,5 +1,19 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
 
+function MaskHide()
+    if StopHoverAnim == false then
+        getHumanoid(STAND):UnequipTools()
+        repeat rs.Stepped:Wait()
+            getRoot(STAND).CFrame=game.Workspace.Ignored.Shop["[Surgeon Mask] - $27"].Head.CFrame*CFrame.new(0,-5,0)
+            fireclickdetector(game.Workspace.Ignored.Shop["[Surgeon Mask] - $27"].ClickDetector)
+        until STAND.Backpack:FindFirstChild("[Mask]")
+        STAND.Backpack:FindFirstChild("[Mask]").Parent = STAND.Character
+        STAND.Character:FindFirstChild('[Mask]'):Activate()
+        --game.Workspace.Ignored.Morphs['[Reset]'].Head.CFrame =  game.Players.LocalPlayer.Character.UpperTorso.CFrame
+        getHumanoid(STAND):UnequipTools()
+    end
+end	
+
 Create('Сосk!',function()
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Want To See My Сосk 😏 🤫', 'All');
 end)
@@ -139,4 +153,14 @@ Create('UnCW!',function()
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Leaving Crew!', 'All');
     wait(.2)
     game.ReplicatedStorage.MainEvent:FireServer("LeaveCrew")
+end)
+
+Create('Mask!',function()
+    Stop()
+    noclip = true
+    MaskHide()
+    follow = true
+    if Sounds == true then
+        play(8655611378,true,true) 
+    end
 end)
