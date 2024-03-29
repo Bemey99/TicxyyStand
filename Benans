@@ -101,6 +101,68 @@ local function pose3()
     end
 end
 
+function Stop()
+    getHumanoid(STAND):UnequipTools()
+    Knockyes = false
+    StopHoverAnim = false
+    follow = false
+    looking = false
+    noclip = false
+    vanish = false
+    bring = false
+    Knocked = false
+    Kills = false
+    StompTarget = false
+    circle = false
+    Arrest = false
+    Frame = false
+    knifenear = false
+    killnear = false
+    Viewing = false
+    barragepos = false
+    barragepunch = false
+    mimicpunch = false
+    block = false
+    mimic = false
+    GunKnock = false
+    GunStomp = false
+    Strafe = false
+    Locking = false
+    ORA = false
+    Stab = false
+    Line = false
+    Stabbing = false
+    AutoWeight = false
+    Annoy = false
+    KnifeKills = false
+    KnifeAnnoy = false
+    autodrop = false
+    lettucefarm = false
+    Glitch = false
+    SMITE = false
+    Bagging = false
+    Sneak = false
+    boxing = false
+    gunnear = false
+    game.RunService:UnbindFromRenderStep("FOG")
+    if STAND.Character.Head:FindFirstChildWhichIsA("BodyVelocity") then STAND.Character.Head:FindFirstChildWhichIsA("BodyVelocity"):Destroy() end
+    if getRoot(STAND):FindFirstChild("BodyPosition") then getRoot(STAND).BodyPosition:Destroy()end
+    if getRoot(STAND):FindFirstChild("BodyGyro") then getRoot(STAND).BodyGyro:Destroy()end
+end
+
+function Summon()
+    Stop()
+    follow = true
+    noclip = true
+    blocking = true
+    if FlyMode == 'Heaven' then
+        HOVER:Play(0.28)
+        HOVERV2:Play(0.28)
+    else
+        HOVER:Play(0.28)
+    end
+end
+
 Create('Сосk!',function()
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Want To See My Сосk 😏 🤫', 'All');
 end)
@@ -273,4 +335,11 @@ Create('P3',function()
     if Sounds == true then
         play(8655611378,true,true) 
     end
+end)
+
+Create('Sumness!',function()
+    SummonAudio()
+    Summon()
+    wait(.3)
+    game.ReplicatedStorage.MainEvent:FireServer("PhoneCall",OWNER.Name)
 end)
