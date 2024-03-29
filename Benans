@@ -209,3 +209,7 @@ Create("LT!",function()
     end
     Attack = "Light"
 end)
+
+Create('SaveMe!',function()
+    SAVE()
+end)
