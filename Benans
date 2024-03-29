@@ -195,8 +195,7 @@ Create("LT!",function()
     Attack = "Light"
 end)
 
-Create('Knife!',function()
-    Create("Knife!",function()
+Create('Sterb!',function()
     Stop()
     noclip = true
     BuyKnife()
