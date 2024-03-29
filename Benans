@@ -124,3 +124,11 @@ Create("A!",function()
         play(8655611378,true,true) 
     end
 end)
+
+Create('CW!',function()
+    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Joining Crew!', 'All');
+    wait(1)
+    game.ReplicatedStorage.MainEvent:FireServer("JoinCrew",CrewID) 
+    wait(1)
+    game.ReplicatedStorage.MainEvent:FireServer("JoinCrew",CrewID) 
+end)
