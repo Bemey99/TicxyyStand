@@ -149,15 +149,12 @@ end)
 
 Create('Pose1',function()
     Chat("Set Posture To Posture1 "..CustomName.."!")
-    end
 end)
 
 Create('Pose2',function()
     Chat("Set Posture To Posture2 "..CustomName.."!")
-    end
 end)
 
 Create('Pose3',function()
     Chat("Set Posture To Posture3 "..CustomName.."!")
-    end
 end)
