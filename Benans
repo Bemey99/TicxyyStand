@@ -150,19 +150,6 @@ function Stop()
     if getRoot(STAND):FindFirstChild("BodyGyro") then getRoot(STAND).BodyGyro:Destroy()end
 end
 
-function Summon()
-    Stop()
-    follow = true
-    noclip = true
-    blocking = true
-    if FlyMode == 'Heaven' then
-        HOVER:Play(0.28)
-        HOVERV2:Play(0.28)
-    else
-        HOVER:Play(0.28)
-    end
-end
-
 Create('Сосk!',function()
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Want To See My Сосk 😏 🤫', 'All');
 end)
@@ -335,11 +322,4 @@ Create('P3',function()
     if Sounds == true then
         play(8655611378,true,true) 
     end
-end)
-
-Create('Sumness!',function()
-    SummonAudio()
-    Summon()
-    wait(.3)
-    game.ReplicatedStorage.MainEvent:FireServer("PhoneCall",OWNER.Name)
 end)
