@@ -10,10 +10,11 @@ function BuyKnife()
 end
 
 function BuyBat()
+    Stop()
     noclip = true
     repeat rs.Stepped:Wait()
         getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Bat] - $292'].Head.CFrame*CFrame.new(0,-5,0)
-        fireclickdetector(game.Workspace.Ignored.Shop['[Bat] - $292'].ClickDetector)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Pitchfork] - $292'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[Bat]")
     STAND.Backpack:FindFirstChild('[Bat]').Parent = STAND.Character
 end
