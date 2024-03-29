@@ -1,5 +1,49 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Bemey99/ticxyy/XD/main/V4.3"))()
 
+function Bring(Target)
+Stop()
+bring = true
+noclip = true
+if KO(TARGET).Value == false then
+game.Workspace.Camera.CameraSubject = getHumanoid(STAND)
+repeat rs.Stepped:Wait()
+if KO(TARGET).Value == false then
+Hit(true)
+TargetMalee(Target)
+game.Workspace.Camera.CameraSubject = getRoot(TARGET)
+end
+until KO(TARGET).Value == true or bring == false
+repeat rs.Stepped:Wait()
+getRoot(STAND).CFrame = getRoot(TARGET).CFrame*CFrame.new(0,300,0)
+until Attacking(STAND).Value == false
+if Alt == false then
+repeat rs.Stepped:Wait()
+if KO(TARGET).Value == true then
+getRoot(STAND).CFrame = CFrame.new(getTorso(TARGET).Position)*CFrame.new(0,5,0)
+wait(.2)
+game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
+wait(.5)
+getRoot(STAND).CFrame = OWNER.Character:FindFirstChild('HumanoidRootPart').CFrame*CFrame.new(0,5,0)
+end
+until KO(TARGET).Value == false or bring == false
+end
+Summon()
+else
+if Alt == false then
+repeat rs.Stepped:Wait()
+if KO(TARGET).Value == true then
+getRoot(STAND).CFrame = CFrame.new(getTorso(TARGET).Position)*CFrame.new(0,5,0)
+wait(.2)
+game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
+wait(.5)
+getRoot(STAND).CFrame = getRoot(OWNER).CFrame*CFrame.new(0,5,0)
+end
+until KO(TARGET).Value == false or bring == false
+end
+Summon()
+end
+end
+
 Create('Сосk!',function()
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Want To See My Сосk 😏 🤫', 'All');
 end)
@@ -189,4 +233,10 @@ end)
 Create('Gun!',function()
     wait(8)
     Chat("Successfully Bought Gun, "..CustomName.."!")
+end)
+
+CreateTargetAbility("Bring!",function()
+    if TARGET then
+        Bring(TARGET)
+    end
 end)
