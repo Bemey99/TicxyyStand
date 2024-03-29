@@ -326,3 +326,4 @@ end)
 
 Arg("Talk/", function()
    Chat(""..Arg.."")
+end)
