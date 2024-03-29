@@ -198,10 +198,3 @@ Create("LT!",function()
     end
     Attack = "Light"
 end)
-
-CreateTargetAbility(".View",function()
-  Chat('Now Viewing Target!')
-    if TARGET then
-        Viewing = true
-    end
-end)
