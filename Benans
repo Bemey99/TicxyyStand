@@ -204,3 +204,15 @@ Create("/disable gkill",function()
     noclip = true
     follow = true
 end)
+
+CreateTargetAbility("Arrest!",function()
+    if TARGET then
+        if STAND.DataFolder:FindFirstChild("Officer").Value == 1 then
+            Stop()
+            noclip = true
+            Arrest = true
+        else
+            Chat('I am not officer '..CustomName..'.')
+        end
+    end
+end)
