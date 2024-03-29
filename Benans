@@ -182,3 +182,19 @@ Create('.Glitch',function()
         getRoot(STAND).CFrame = getRoot(TARGET).CFrame
     until KO(TARGET).Value == true 
 end)
+
+Create("HY!",function()
+  Chat("Attack Set To Heavy "..CustomName.."!")
+    if Sounds == true then
+        play(8655611378,true,true) 
+    end
+    Attack = "Heavy"
+end)
+
+Create("LT!",function()
+  Chat("Attack Set To Light "..CustomName.."!")
+    if Sounds == true then
+        play(8655611378,true,true) 
+    end
+    Attack = "Light"
+end)
