@@ -211,7 +211,7 @@ Create('PosCheck!',function()
     end
 end)
 
-Create('FlyCheck',function()
+Create('FlyCheck!',function()
     if FlyMode == "Heaven" then
    Chat("Fly : Heaven")
     elseif FlyMode == "FlyV1" then
