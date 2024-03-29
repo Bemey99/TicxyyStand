@@ -11,7 +11,6 @@ Stop()
     STAND.Backpack:FindFirstChild("[Mask]").Parent = STAND.Character
     wait(.1)
     follow = true
-    repeat rs.Stepped:Wait()
         STAND.Character:FindFirstChild('[Mask]'):Activate()
 end
 
