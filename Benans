@@ -323,7 +323,3 @@ Create('P3',function()
         play(8655611378,true,true) 
     end
 end)
-
-Arg("Talk/", function()
-   Chat(""..Arg.."")
-end)
