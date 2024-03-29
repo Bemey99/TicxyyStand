@@ -186,7 +186,7 @@ Create("LT!",function()
     Attack = "Light"
 end)
 
-CreateTargetAbility("!Stomp",function()
+CreateTargetAbility("Stomp!",function()
     if TARGET then
         Stop()
         noclip = true
