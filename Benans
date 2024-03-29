@@ -154,13 +154,3 @@ Create('UnCW!',function()
     wait(.2)
     game.ReplicatedStorage.MainEvent:FireServer("LeaveCrew")
 end)
-
-Create('Mask!',function()
-    Stop()
-    noclip = true
-    MaskHide()
-    follow = true
-    if Sounds == true then
-        play(8655611378,true,true) 
-    end
-end)
