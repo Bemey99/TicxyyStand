@@ -124,11 +124,3 @@ Create("A!",function()
         play(8655611378,true,true) 
     end
 end)
-
-CreateTargetAbility("Frame!",function()
-    if TARGET then
-        Stop()
-        noclip = true
-        Frame = true
-    end
-end)
