@@ -1,11 +1,94 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
 
 Create('Сосk!',function()
-    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Want To See My Сосk, Mommy🤫', 'All');
+    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Want To See My Сосk 😏 🤫', 'All');
 end)
 
 Create('Ban!',function()
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Perma-Ban in 20 Seconds.', 'All');
 wait(20)
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Joking!', 'All');
+end)
+
+Arg('L!',function()
+    local GetPlayer = gplr(Arg)
+    if GetPlayer.Name == STAND.Name then
+        if ChatCmds == true then
+            Chat("My Position Has Been Set To Left "..CustomName.."!")
+        end
+        Pos = "Left"
+        if Sounds == true then
+            play(8655611378,true,true) 
+        end
+    end
+end)
+
+Arg('R!',function()
+    local GetPlayer = gplr(Arg)
+    if GetPlayer.Name == STAND.Name then
+        if ChatCmds == true then
+            Chat("My Position Has Been Set To Right "..CustomName.."!")
+        end
+        Pos = "Right"
+        if Sounds == true then
+            play(8655611378,true,true) 
+        end
+    end
+end)
+
+Arg('B!',function()
+    local GetPlayer = gplr(Arg)
+    if GetPlayer.Name == STAND.Name then
+        if ChatCmds == true then
+            Chat("My Position Has Been Set To Back "..CustomName.."!")
+        end
+        Pos = "Back"
+        if Sounds == true then
+            play(8655611378,true,true) 
+        end
+    end
+end)
+
+Create("l!",function()
+    if ChatCmds == true then
+        Chat("My Position Has Been Set To Left "..CustomName.."!")
+    end
+    Pos = "Left"
+    if Sounds == true then
+        play(8655611378,true,true) 
+    end
+end)
+
+Create("r!",function()
+    if ChatCmds == true then
+        Chat("My Position Has Been Set To Right "..CustomName.."!")
+    end
+    Pos = "Right"
+    if Sounds == true then
+        play(8655611378,true,true) 
+    end
+end)
+
+Create("b!",function()
+    if ChatCmds == true then
+        Chat("My Position Has Been Set To Back "..CustomName.."!")
+    end
+    Pos = "Back"
+    if Sounds == true then
+        play(8655611378,true,true) 
+    end
+end)
+
+Create("U!",function()
+    Pos = "Under"
+    if Sounds == true then
+        play(8655611378,true,true) 
+    end
+end)
+
+Create("A!",function()
+    Pos = "Alt"
+    if Sounds == true then
+        play(8655611378,true,true) 
+    end
 end)
