@@ -171,3 +171,14 @@ Create('protect!',function()
         defense()
     end
 end)
+
+Create('.Glitch',function()
+    Chat("Attempting To Glitch!")
+    Stop()
+    Reset()
+    wait(1)
+    repeat rs.heartbeat:wait()
+        Hit(false)
+        getRoot(STAND).CFrame = getRoot(TARGET).CFrame
+    until KO(TARGET).Value == true 
+end)
