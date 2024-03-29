@@ -186,22 +186,12 @@ Create("LT!",function()
     Attack = "Light"
 end)
 
-Create('Lmg!',function()
+Create("Gkill!",function()
+    Chat("Now Gun Killing All Players Near You "..CustomName.."!")
     Stop()
-    repeat rs.Stepped:Wait()
-        getRoot(STAND).CFrame=game.Workspace.Ignored.Shop["[LMG] - $3978"].Head.CFrame
-        fireclickdetector(game.Workspace.Ignored.Shop["[LMG] - $3978"].ClickDetector)
-    until STAND.Backpack:FindFirstChild("[LMG]")
-    game.Players.LocalPlayer.Backpack:FindFirstChild("[LMG]").GripPos = Vector3.new(0,-7,-7)
-    getRoot(STAND).CFrame=game.Workspace.Ignored.Shop['200 [LMG Ammo] - $318'].Head.CFrame*CFrame.new(0,-5,0)
-        fireclickdetector(game.Workspace.Ignored.Shop["200 [LMG Ammo] - $318"].ClickDetector) wait(1)
-        fireclickdetector(game.Workspace.Ignored.Shop["200 [LMG Ammo] - $318"].ClickDetector) wait(1)
-        fireclickdetector(game.Workspace.Ignored.Shop["200 [LMG Ammo] - $318"].ClickDetector) wait(1)
-        fireclickdetector(game.Workspace.Ignored.Shop["200 [LMG Ammo] - $318"].ClickDetector) wait(1)
-        fireclickdetector(game.Workspace.Ignored.Shop["200 [LMG Ammo] - $318"].ClickDetector) wait(1)
-        fireclickdetector(game.Workspace.Ignored.Shop["200 [LMG Ammo] - $318"].ClickDetector) wait(1)
-        fireclickdetector(game.Workspace.Ignored.Shop["200 [LMG Ammo] - $318"].ClickDetector) wait(1)
-        fireclickdetector(game.Workspace.Ignored.Shop["200 [LMG Ammo] - $318"].ClickDetector)
-    follow = true
-   Chat("Successfully Bought LMG, "..CustomName.."!")
+    if Sounds == true then
+        play(8655611378,true,true) 
+    end	
+    noclip = true
+    gunnear = true
 end)
