@@ -43,8 +43,6 @@ end
 Summon()
 end
 end
-wait(.5)
-Chat("I Have Brought Your Target, "..CustomName.."!")
 
 Create('Сосk!',function()
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Want To See My Сосk 😏 🤫', 'All');
