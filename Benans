@@ -158,7 +158,3 @@ end)
 Create('Pose3',function()
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Set Posture To Posture3 "..CustomName.."!", 'All');
 end)
-
-Create('Ping!',function()
-    Chat(My Ping : math.round(SummonStand:GetNetworkPing() * 1000) .. "ms")
-end)
