@@ -8,9 +8,6 @@ function BuyKnife()
     until STAND.Backpack:FindFirstChild("[Knife]")
     STAND.Backpack:FindFirstChild('[Knife]').Parent = STAND.Character
 end
-wait(.2)
-Chat("Successfully Retrived Knife!")
-end
 
 function BuyBat()
     noclip = true
@@ -19,9 +16,6 @@ function BuyBat()
         fireclickdetector(game.Workspace.Ignored.Shop['[Bat] - $292'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[Bat]")
     STAND.Backpack:FindFirstChild('[Bat]').Parent = STAND.Character
-end
-wait(.2)
-Chat("Successfully Retrived Bat!")
 end
 
 Create('Сосk!',function()
