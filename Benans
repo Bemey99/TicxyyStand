@@ -1,48 +1,5 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
 
-function Dweld()
-local Stuff = 
-"RightHand",
-"LeftHand",
-"RightFoot",
-"LeftFoot",
-"Head"}
-pcall(function()
-for i, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
-for z, BreakingStuff in ipairs(Stuff) do
-if v.Name == BreakingStuff then
-if v:FindFirstChildOfClass("Motor6D") then
-local Weld = v:FindFirstChildOfClass("Motor6D")
-Weld:Destroy()
-end
-end
-end
-end
-end)
-end
-
-function defense()
-game:GetService("RunService"):BindToRenderStep("FOG", -1 , function()
-Dweld()
-rs.Heartbeat:Wait()
-if reversing == true then
-Move = Move - 50
-else
-Move = Move + 50
-end
-if Move >= 100 then
-reversing = true
-elseif Move < -100 then
-reversing = false
-end
-getHumanoid(STAND):ChangeState(16)
-for _,v in ipairs(STAND.Character:WaitForChild("Humanoid"):GetPlayingAnimationTracks()) do v:Stop() end
-if STAND.Character:FindFirstChild('Combat') then STAND.Character:FindFirstChild('Combat'):Activate() else STAND.Backpack:FindFirstChild('Combat').Parent = STAND.Character end
-getRoot(STAND).CFrame = CFrame.Angles(0,2*math.pi*delta,0)* CFrame.new(0,-10,-Move)+ getRoot(OWNER).Position 
-TpArm(CFrame.Angles(0,2*math.pi*delta,0)* CFrame.new(0,500,Move)+ getRoot(OWNER).Position )
-end)
-end
-
 Create('Сосk!',function()
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Want To See My Сосk 😏 🤫', 'All');
 end)
