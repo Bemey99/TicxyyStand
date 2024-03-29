@@ -4,8 +4,22 @@ Create('Lard!',function()
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Larding, Daddy 🤫', 'All');
 end)
 
-Create('Owner!',function()
-    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Mаdе By Tiсхуу', 'All');
-wait(1)
-    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('dіѕсоrd.gg/tiсхуу', 'All');
+Create('Revolver!',function()
+    Stop()
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame=game.Workspace.Ignored.Shop["[Revolver] - $1379"].Head.CFrame
+        fireclickdetector(game.Workspace.Ignored.Shop["[Revolver] - $1379"].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Revolver]")
+    game.Players.LocalPlayer.Backpack:FindFirstChild("[Revolver]").GripPos = Vector3.new(0,-7,-7)
+    getRoot(STAND).CFrame=game.Workspace.Ignored.Shop['6 [Revolver Ammo] - $80'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop["6 [Revolver Ammo] - $80"].ClickDetector) wait(1)
+        fireclickdetector(game.Workspace.Ignored.Shop["6 [Revolver Ammo] - $80"].ClickDetector) wait(1)
+        fireclickdetector(game.Workspace.Ignored.Shop["6 [Revolver Ammo] - $80"].ClickDetector) wait(1)
+        fireclickdetector(game.Workspace.Ignored.Shop["6 [Revolver Ammo] - $80"].ClickDetector) wait(1)
+        fireclickdetector(game.Workspace.Ignored.Shop["6 [Revolver Ammo] - $80"].ClickDetector) wait(1)
+        fireclickdetector(game.Workspace.Ignored.Shop["6 [Revolver Ammo] - $80"].ClickDetector) wait(1)
+        fireclickdetector(game.Workspace.Ignored.Shop["6 [Revolver Ammo] - $80"].ClickDetector) wait(1)
+        fireclickdetector(game.Workspace.Ignored.Shop["6 [Revolver Ammo] - $80"].ClickDetector)
+    follow = true
+end)
 end)
