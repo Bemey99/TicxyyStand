@@ -198,3 +198,15 @@ Create("LT!",function()
     end
     Attack = "Light"
 end)
+
+Create('PosCheck!',function()
+    if Pos == "Back" then
+   Chat("Pos : Back")
+    elseif Pos == "Left" then
+   Chat("Pos : Left")
+    elseif Pos == "Right" then
+   Chat("Pos : Right")
+    elseif Pos == "Alt" then
+   Chat("Pos : Alt")
+    end
+end)
