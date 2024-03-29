@@ -124,3 +124,12 @@ Create("A!",function()
         play(8655611378,true,true) 
     end
 end)
+
+Create('FlyMode?',function()
+    if FlyMode == 'Heaven' then
+Chat("FlyMode: Heaven")
+    if FlyMode == 'FlyV1' then
+Chat("FlyMode: FlyV1")
+     end
+ end)
+end)
