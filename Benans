@@ -204,9 +204,3 @@ Create("/disable gkill",function()
     noclip = true
     follow = true
 end)
-
-Create('Role?',function()
-    if STAND.DataFolder:FindFirstChild("Officer").Value == 1 then
-            Chat("Role : Officer")
-         else
-            Chat("Role : Person")
