@@ -1,5 +1,39 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
 
+function Dweld()
+local Stuff = 
+"RightHand",
+"LeftHand",
+"RightFoot",
+"LeftFoot",
+"Head"}
+pcall(function()
+for i, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+for z, BreakingStuff in ipairs(Stuff) do
+if v.Name == BreakingStuff then
+if v:FindFirstChildOfClass("Motor6D") then
+local Weld = v:FindFirstChildOfClass("Motor6D")
+Weld:Destroy()
+end
+end
+end
+end
+end)
+end
+
+function FOG()
+game:GetService("RunService"):BindToRenderStep("FOG", -1 , function()
+Dweld()
+rs.Heartbeat:Wait()
+getHumanoid(STAND):ChangeState(16)
+for _,v in ipairs(STAND.Character:WaitForChild("Humanoid"):GetPlayingAnimationTracks()) do v:Stop() end
+if STAND.Character:FindFirstChild('Combat') then STAND.Character:FindFirstChild('Combat'):Activate() else STAND.Backpack:FindFirstChild('Combat').Parent = STAND.Character end
+local Rany = math.random(18,38)
+getRoot(STAND).CFrame = CFrame.Angles(0,FogSpeed*math.pi*delta,0)* CFrame.new(0,Rany,FogDistance)
+TpArm(CFrame.Angles(0,FogSpeed*math.pi*delta,0)* CFrame.new(0,Rany,-FogDistance))
+end)
+end
+
 function Vanish()
     Stop()
     noclip = true
@@ -218,4 +252,18 @@ Create('BXIG!',function()
     Stop()
     noclip = true
     boxing = true
+end)
+
+Create('Foger!',function()
+    if Alt == false then
+        Stop()
+        noclip = true
+        FOG()
+    elseif Alt == true then
+        wait(2)
+        Stop()
+        noclip = true
+        Fog = true
+        FOG()
+    end
 end)
