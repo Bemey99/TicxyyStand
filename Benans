@@ -1,5 +1,46 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
 
+function BuySilentAR()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[SilencerAR] - $1326'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[SilencerAR] - $1326'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[SilencerAR]")
+    STAND.Backpack:FindFirstChild('[SilencerAR]').Parent = STAND.Character
+end
+
+
+function BuyTact()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[TacticalShotgun] - $1857'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[TacticalShotgun] - $1857'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[TacticalShotgun]")
+    STAND.Backpack:FindFirstChild('[TacticalShotgun]').Parent = STAND.Character
+end
+
+function BuyGlock()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Glock] - $530'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Glock] - $530'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Glock]")
+    STAND.Backpack:FindFirstChild('[Glock]').Parent = STAND.Character
+end
+
+function BuyP90()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[P90] - $1061'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[P90] - $1061'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[P90]")
+    STAND.Backpack:FindFirstChild('[P90]').Parent = STAND.Character
+end
+
 function BuyAK()
 Stop()
     noclip = true
@@ -690,5 +731,37 @@ Create('Buy! AR',function()
     Stop()
     noclip = true
     BuyAR()
+    follow = true
+end)
+
+Create('Buy! SilencerAR',function()
+    Chat("Buying SilencerAR, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuySilentAR()
+    follow = true
+end)
+
+Create('Buy! Tactical',function()
+    Chat("Buying Tactical, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyTact()
+    follow = true
+end)
+
+Create('Buy! Glock',function()
+    Chat("Buying Glock, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyGlock()
+    follow = true
+end)
+
+Create('Buy! P90',function()
+    Chat("Buying P90, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyP90()
     follow = true
 end)
