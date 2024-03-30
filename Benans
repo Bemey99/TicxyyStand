@@ -1,5 +1,14 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
 
+function BuyKnife()
+noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Knife] - $159'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Knife] - $159'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Knife]")
+    STAND.Backpack:FindFirstChild('[Knife]').Parent = STAND.Character
+end
+
 Create('Сосk!',function()
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Want To See My Сосk 😏 🤫', 'All');
 end)
@@ -184,4 +193,13 @@ Create("LT!",function()
         play(8655611378,true,true) 
     end
     Attack = "Light"
+end)
+
+CreateTargetAbility("KAnnoy!",function()
+    if TARGET then
+        Stop()
+        noclip = true
+        BuyKnife()
+        KnifeAnnoy = true
+    end
 end)
