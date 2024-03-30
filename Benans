@@ -1,21 +1,4 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
-
-function HealMe()
-Stop()
-    noclip = true
-    getHumanoid(STAND):UnequipTools()
-    repeat rs.Stepped:Wait()
-        getRoot(STAND).CFrame=game.Workspace.Ignored.Shop["[Taco] - $2"].Head.CFrame*CFrame.new(0,-5,0)   
-        fireclickdetector(game.Workspace.Ignored.Shop["[Taco] - $2"].ClickDetector)
-    until STAND.Backpack:FindFirstChild("[Taco]")
-    STAND.Backpack:FindFirstChild("[Taco]").Parent = STAND.Character
-    wait(.1)
-    follow = true
-    repeat rs.Stepped:Wait()
-        STAND.Character:FindFirstChild('[Taco]'):Activate()
-    until not STAND.Character:FindFirstChild('[Taco]')
-end
-
 Create('Сосk!',function()
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Want To See My Сосk 😏 🤫', 'All');
 end)
@@ -203,13 +186,4 @@ Create("LT!",function()
         play(8655611378,true,true) 
     end
     Attack = "Light"
-end)
-
-Create('SHeal!',function()
-   Chat("Healing!")
-    HealMe()
-   wait(5)
-    follow = true
-   wait(.2)
-   Chat("Healed!")
 end)
