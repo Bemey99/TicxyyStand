@@ -369,7 +369,9 @@ Create('Buy! LockPick',function()
 end)
 
 Create("Buy! LMG",function()
+   Chat("Buying LMG, "..CustomName.."!")
     Stop()
+   noclip = true
     repeat rs.Stepped:Wait()
         getRoot(STAND).CFrame=game.Workspace.Ignored.Shop["[LMG] - $3978"].Head.CFrame
         fireclickdetector(game.Workspace.Ignored.Shop["[LMG] - $3978"].ClickDetector)
