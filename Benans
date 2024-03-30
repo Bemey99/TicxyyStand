@@ -1,5 +1,75 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
 
+function BuyShovel()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Shovel] - $339'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Shovel] - $339'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Shovel]")
+    STAND.Backpack:FindFirstChild('[Shovel]').Parent = STAND.Character
+end
+
+function BuyCran()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Cranberry] - $3'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Cranberry] - $3'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Cranberry]")
+    STAND.Backpack:FindFirstChild('[Cranberry]').Parent = STAND.Character
+end
+
+function BuyStopSign()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[StopSign] - $318'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[StopSign] - $318'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[StopSign]")
+    STAND.Backpack:FindFirstChild('[StopSign]').Parent = STAND.Character
+end
+
+function BuyChick()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Chicken] - $7'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Chicken] - $7'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Chicken]")
+    STAND.Backpack:FindFirstChild('[Chicken]').Parent = STAND.Character
+end
+
+function BuyStarBlox()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Starblox Latte] - $5'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Starblox Latte] - $5'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Starblox Latte]")
+    STAND.Backpack:FindFirstChild('[Starblox Latte]').Parent = STAND.Character
+end
+
+function BuyLettuce()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Lettuce] - $5'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Lettuce] - $5'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Lettuce]")
+    STAND.Backpack:FindFirstChild('[Lettuce]').Parent = STAND.Character
+end
+
+function BuyPen()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Pencil] - $186'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Pencil] - $186'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Pencil]")
+    STAND.Backpack:FindFirstChild('[Pencil]').Parent = STAND.Character
+end
+
 function BuyMoneyG()
 Stop()
     noclip = true
@@ -446,4 +516,52 @@ end)
 Create('AutoBuy! Lettuce',function()
     lettucefarm = true
     Chat("AutoBuying Lettuce, "..CustomName.."!")
+end)
+
+Create('Buy! Starblox',function()
+    Chat("Buying StarBlox Latte, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyStarBlox()
+    follow = true
+end)
+
+Create('Buy! Cranberry',function()
+    Chat("Buying Cranberry, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyCran()
+    follow = true
+end)
+
+Create('Buy! Shovel',function()
+    Chat("Buying Shovel, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyShovel()
+    follow = true
+end)
+
+Create('Buy! Pen',function()
+    Chat("Buying Pen, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyPen()
+    follow = true
+end)
+
+Create('Buy! Lettuce',function()
+    Chat("Buying Lettuce, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyLettuce()
+    follow = true
+end)
+
+Create('Buy! StopSign',function()
+    Chat("Buying StopSign, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyStopSign()
+    follow = true
 end)
