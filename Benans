@@ -447,20 +447,3 @@ Create('AutoBuy! Lettuce',function()
     lettucefarm = true
     Chat("AutoBuying Lettuce, "..CustomName.."!")
 end)
-
-Create("Throw!",function()
-    if Sounds == true then
-        play(8655611378,true,true) 
-    end	
-
-    if Pos == "Alt" then
-        follow = false
-        noclip = true
-        getRoot(STAND).CFrame = getRoot(OWNER).CFrame*CFrame.new(0,5,0) wait(1)
-        game.ReplicatedStorage.MainEvent:FireServer("Grabbing",true)
-        follow = true
-    else
-        game.ReplicatedStorage.MainEvent:FireServer("Grabbing",true)
-
-    end
-end)
