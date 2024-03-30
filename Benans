@@ -227,6 +227,5 @@ Create('SSign!',function()
         fireclickdetector(game.Workspace.Ignored.Shop['[StopSign] - $309'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[StopSign]")
     STAND.Backpack:FindFirstChild('[StopSign]').Parent = STAND.Character
-    STAND.Character:FindFirstChild('[StopSign]'):Activate()
 end
 end)
