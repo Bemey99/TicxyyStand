@@ -1206,3 +1206,10 @@ Create('Buy! Taco',function()
     BuyTaco()
     follow = true
 end)
+
+Create('Unmask!',function()
+    STAND.Backpack:FindFirstChild("[Mask]")
+    STAND.Backpack:FindFirstChild('[Mask]').Parent = STAND.Character
+    STAND.Character:FindFirstChild('[Mask]'):Activate()
+   getHumanoid(STAND):UnequipTools()
+end)
