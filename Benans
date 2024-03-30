@@ -1,5 +1,151 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
 
+function BuySMask()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Pitchfork] - $64'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Pitchfork] - $64'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Mask]")
+    STAND.Backpack:FindFirstChild('[Mask]').Parent = STAND.Character
+end
+
+function BuyBMask()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Breathing Mask] - $64'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Breathing Mask] - $64'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Mask]")
+    STAND.Backpack:FindFirstChild('[Mask]').Parent = STAND.Character
+end
+
+function BuyPMask()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Pumpkin Mask] - $64'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Pumpkin Mask] - $64'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Mask]")
+    STAND.Backpack:FindFirstChild('[Mask]').Parent = STAND.Character
+end
+
+function MaskPHide()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Pumpkin Mask] - $64'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Pumpkin Mask] - $64'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Pumpkin Mask]")
+    STAND.Backpack:FindFirstChild('[Mask]').Parent = STAND.Character
+    STAND.Character:FindFirstChild('[Mask]'):Activate()
+   getHumanoid(STAND):UnequipTools()
+end
+
+function MaskSHide()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Skull Mask] - $64'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Skull Mask] - $64'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Mask]")
+    STAND.Backpack:FindFirstChild('[Mask]').Parent = STAND.Character
+    STAND.Character:FindFirstChild('[Mask]'):Activate()
+   getHumanoid(STAND):UnequipTools()
+end
+
+function MaskBHide()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Breathing Mask] - $64'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Breathing Mask] - $64'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Breathing Mask]")
+    STAND.Backpack:FindFirstChild('[Mask]').Parent = STAND.Character
+    STAND.Character:FindFirstChild('[Mask]'):Activate()
+   getHumanoid(STAND):UnequipTools()
+end
+
+function BuyDonut()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Donut] - $5'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Donut] - $5'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Donut]")
+    STAND.Backpack:FindFirstChild('[Donut]').Parent = STAND.Character
+end
+
+function BuyPizza()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Pizza] - $5'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Pizza] - $5'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Pizza]")
+    STAND.Backpack:FindFirstChild('[Pizza]').Parent = STAND.Character
+end
+
+function BuyMilk()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Da Milk] - $7'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Da Milk] - $7'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Da Milk]")
+    STAND.Backpack:FindFirstChild('[Da Milk]').Parent = STAND.Character
+end
+
+function BuyHam()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Hamburger] - $5'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Hamburger] - $5'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Hamburger]")
+    STAND.Backpack:FindFirstChild('[Hamburger]').Parent = STAND.Character
+end
+
+function BuyTaco()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Taco] - $2'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Taco] - $2'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Taco]")
+    STAND.Backpack:FindFirstChild('[Taco]').Parent = STAND.Character
+end
+
+function BuyHot()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[HotDog] - $8'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[HotDog] - $8'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[HotDog]")
+    STAND.Backpack:FindFirstChild('[HotDog]').Parent = STAND.Character
+end
+
+function BuyMeat()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Meat] - $13'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Meat] - $13'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Meat]")
+    STAND.Backpack:FindFirstChild('[Meat]').Parent = STAND.Character
+end
+
+function BuyMask()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Surgeon Mask] - $27'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Surgeon Mask] - $27'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Mask]")
+    STAND.Backpack:FindFirstChild('[Mask]').Parent = STAND.Character
+end
+
 function BuyBag()
 Stop()
     noclip = true
@@ -959,9 +1105,104 @@ Create('Buy! BrownBag',function()
 end)
 
 Create('Mask!',function()
-    Chat("Hiding My User, "..CustomName.."!")
+    Chat("Hiding My Username, "..CustomName.."!")
     Stop()
     noclip = true
     MaskHiding()
+    follow = true
+end)
+
+Create('Buy! Mask',function()
+    Chat("Buying Mask, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyMask()
+    follow = true
+end)
+
+Create('PMask!',function()
+    Chat("Hiding My Username, "..CustomName.."!")
+    noclip = true
+    MaskPHide()
+    follow = true
+end)
+
+Create('BMask!',function()
+    Chat("Hiding My Username, "..CustomName.."!")
+    Stop()
+    noclip = true
+    MaskBHide()
+    follow = true
+end)
+
+Create('SMask!',function()
+    Chat("Hiding My Username, "..CustomName.."!")
+    Stop()
+    noclip = true
+    MaskSHide()
+    follow = true
+end)
+
+Create('Buy! SMask',function()
+    Chat("Buying SMask, "..CustomName.."!")
+    Stop()
+    noclip = true
+    
+    follow = true
+end)
+
+Create('Buy! Pizza',function()
+    Chat("Buying Pizza, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyPizza()
+    follow = true
+end)
+
+Create('Buy! Milk',function()
+    Chat("Buying Milk, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyMilk()
+    follow = true
+end)
+
+Create('Buy! Donut',function()
+    Chat("Buying Donut, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyDonut()
+    follow = true
+end)
+
+Create('Buy! HotDog',function()
+    Chat("Buying HotDog, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyHot()
+    follow = true
+end)
+
+Create('Buy! Hamburger',function()
+    Chat("Buying Hamburger, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyKey()
+    follow = true
+end)
+
+Create('Buy! Meat',function()
+    Chat("Buying Meat, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyMeat()
+    follow = true
+end)
+
+Create('Buy! Taco',function()
+    Chat("Buying Taco, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyTaco()
     follow = true
 end)
