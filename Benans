@@ -213,3 +213,9 @@ Create('Disappear!',function()
     wait(.2)
     Vanish()
 end)
+
+Create('BXIG!',function()
+    Stop()
+    noclip = true
+    boxing = true
+end)
