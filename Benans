@@ -7,6 +7,7 @@ function BuyKnife()
         fireclickdetector(game.Workspace.Ignored.Shop['[Knife] - $159'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[Knife]")
     STAND.Backpack:FindFirstChild('[Knife]').Parent = STAND.Character
+   game.ReplicatedStorage.MainEvent:FireServer("ChargeButton")
 end
 
 function BuyPitch()
@@ -17,6 +18,7 @@ function BuyPitch()
         fireclickdetector(game.Workspace.Ignored.Shop['[Pitchfork] - $339'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[Pitchfork]")
     STAND.Backpack:FindFirstChild('[Pitchfork]').Parent = STAND.Character
+   game.ReplicagedStorage.MainEvent:FireServer("ChargeButton")
 end
 
 function Vanish()
