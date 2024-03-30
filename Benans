@@ -214,20 +214,24 @@ Create('Disappear!',function()
     Vanish()
 end)
 
-Create('MS1!',function()
+Create("MS1!",function()
+    Stop()
+    noclip = true
     repeat rs.Stepped:Wait()
-            getRoot(STAND).CFrame = game.Workspace.Ignored.Shop["[Default Moveset] - $0"].Head.CFrame
-            fireclickdetector(game.Workspace.Ignored.Shop["[Default Moveset] - $0"].ClickDetector)
-        until STAND.DataFolder.Information.FightingStyle.Value == 'Default'
-        follow = true
-    end
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop["[Default Moveset] - $0"].Head.CFrame
+        fireclickdetector(game.Workspace.Ignored.Shop["[Default Moveset] - $0"].ClickDetector)
+    until STAND.DataFolder.Information.FightingStyle.Value == 'Default'
+    Chat('FightingStyle : '..STAND.DataFolder.Information.FightingStyle.Value)
+    follow = true
 end)
 
-Create('MS2!',function()
+Create("MS2!",function()
+    Stop()
+    noclip = true
     repeat rs.Stepped:Wait()
-            getRoot(STAND).CFrame = game.Workspace.Ignored.Shop["[Advanced Moveset] - $0"].Head.CFrame
-            fireclickdetector(game.Workspace.Ignored.Shop["[Advanced Moveset] - $0"].ClickDetector)
-        until STAND.DataFolder.Information.FightingStyle.Value == 'Advanced'
-        follow = true
-    end
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop["Boxing Moveset (Require: Max Box Stat) - $0"].Head.CFrame
+        fireclickdetector(game.Workspace.Ignored.Shop["Boxing Moveset (Require: Max Box Stat) - $0"].ClickDetector)
+    until STAND.DataFolder.Information.FightingStyle.Value == 'Boxing'
+    Chat('FightingStyle : '..STAND.DataFolder.Information.FightingStyle.Value)
+    follow = true
 end)
