@@ -1,4 +1,5 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
+
 Create('Сосk!',function()
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Want To See My Сосk 😏 🤫', 'All');
 end)
@@ -186,4 +187,49 @@ Create("LT!",function()
         play(8655611378,true,true) 
     end
     Attack = "Light"
+end)
+
+Create('Combat!',function()
+    OWNER.Character.ChildAdded:Connect(function(a)
+        if a.Name == 'Combat' then
+            a:Destroy()
+            Stop()
+            if STAND.Backpack:FindFirstChild("[StopSign]") then else
+                repeat wait()
+                    STAND.Character.HumanoidRootPart.CFrame = CFrame.new(-225.856354, 21.740221, -77.2130737, 0.999822319, 1.08228349e-07, 0.0188493319, -1.07573136e-07, 1, -3.57744554e-08, -0.0188493319, 3.37404202e-08, 0.999822319)
+                fireclickdetector(workspace.Ignored.Shop["[StopSign] - $309"].ClickDetector)
+                until STAND.Backpack:FindFirstChild("[StopSign]")
+            end
+            STAND.Backpack:WaitForChild("[StopSign]")
+            STAND.Backpack["[StopSign]"].GripPos = Vector3.new(-15,0,0)
+            wait()
+            STAND.Character.HumanoidRootPart.CFrame = CFrame.new(0, 2000, 0);
+            STAND.Backpack["[StopSign]"].Parent = STAND.Character
+            wait()
+            game.ReplicatedStorage.MainEvent:FireServer("ChargeButton")
+            wait(0.6)
+            game:GetService("RunService"):BindToRenderStep("TARGET", -1 , function()
+            rs.heartbeat:wait()
+            getHumanoid(STAND):ChangeState(11)
+            for i,v in pairs(STAND.Character:GetDescendants()) do
+                if v:IsA("BasePart") or v:IsA("MeshPart") then
+                    v.CanCollide = false
+                    v.Velocity = Vector3.new(0,0,0)
+                end
+            end
+            for _,v in ipairs(STAND.Character:WaitForChild("Humanoid"):GetPlayingAnimationTracks()) do v:Stop() end
+            STAND.Character.HumanoidRootPart.CFrame = OWNER.Character.HumanoidRootPart.CFrame * CFrame.new(0, -4, -3) * CFrame.Angles(math.pi*0.5,0,0)
+            end)
+            wait(1)
+            STAND.Character["[StopSign]"].Parent = STAND.Backpack
+            STAND.Character.HumanoidRootPart.CFrame = CFrame.new(0, -100, 0);
+            game:GetService("RunService"):UnbindFromRenderStep("TARGET")
+            STAND.Character.HumanoidRootPart.CFrame = CFrame.new(0, -100, 0);
+            wait(0.2)
+            STAND.Character.HumanoidRootPart.CFrame = CFrame.new(0, -100, 0);
+            wait(.1)
+            getRoot(STAND).CFrame=CFrame.new(-116,-58,146)
+            getHumanoid(STAND):ChangeState(8)
+        end
+    end)
 end)
