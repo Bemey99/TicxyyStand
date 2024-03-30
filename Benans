@@ -1,5 +1,27 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
 
+function BuyBag()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[BrownBag] - $27'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[BrownBag] - $27'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[BrownBag]")
+    STAND.Backpack:FindFirstChild('[BrownBag]').Parent = STAND.Character
+end
+
+function MaskHiding()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Surgeon Mask] - $27'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Surgeon Mask] - $27'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Mask]")
+    STAND.Backpack:FindFirstChild('[Mask]').Parent = STAND.Character
+    STAND.Character:FindFirstChild('[Mask]'):Activate()
+  getHumanoid(STAND):UnequipTools()
+end
+
 function BuyCamera()
 Stop()
     noclip = true
@@ -925,5 +947,21 @@ Create('Buy! Flowers',function()
     Stop()
     noclip = true
     BuyFlower()
+    follow = true
+end)
+
+Create('Buy! BrownBag',function()
+    Chat("Buying BrownBag, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyBag()
+    follow = true
+end)
+
+Create('Mask!',function()
+    Chat("Hiding My User, "..CustomName.."!")
+    Stop()
+    noclip = true
+    MaskHiding()
     follow = true
 end)
