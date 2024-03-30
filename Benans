@@ -1,4 +1,95 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
+
+function BuyCamera()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Camera] - $106'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Camera] - $106'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Camera]")
+    STAND.Backpack:FindFirstChild('[Camera]').Parent = STAND.Character
+end
+
+function BuyFlash()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Flashlight] - $11'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Flashlight] - $11'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Flashlight]")
+    STAND.Backpack:FindFirstChild('[Flashlight]').Parent = STAND.Character
+end
+
+function BuyFoodCart()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[FoodsCart] - $16'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[FoodsCart] - $16'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[FoodsCart]")
+    STAND.Backpack:FindFirstChild('[FoodsCart]').Parent = STAND.Character
+end
+
+function BuyAnti()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[AntiBodies] - $106'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[AntiBodies] - $106'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[AntiBodies]")
+    STAND.Backpack:FindFirstChild('[AntiBodies]').Parent = STAND.Character
+end
+
+function BuyFlower()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Flowers] - $5'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Flowers] - $5'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Flowers]")
+    STAND.Backpack:FindFirstChild('[Flowers]').Parent = STAND.Character
+end
+
+function BuyCross()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Crossbow] - $159'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Crossbow] - $159'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Crossbow]")
+    STAND.Backpack:FindFirstChild('[Crossbow]').Parent = STAND.Character
+end
+
+function BuyTele()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Tele] - $159'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Tele] - $159'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Tele]")
+    STAND.Backpack:FindFirstChild('[Tele]').Parent = STAND.Character
+end
+
+function BuyOrangeP()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Orange Phone] - $424'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Orange Phone] - $424'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Orange Phone]")
+    STAND.Backpack:FindFirstChild('[Orange Phone]').Parent = STAND.Character
+end
+
+function BuyiPhone()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[iPhone] - $637'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[iPhone] - $637'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[iPhone]")
+    STAND.Backpack:FindFirstChild('[iPhone]').Parent = STAND.Character
+end
+
 function BuySilentAR()
 Stop()
     noclip = true
@@ -762,5 +853,77 @@ Create('Buy! P90',function()
     Stop()
     noclip = true
     BuyP90()
+    follow = true
+end)
+
+Create('Buy! FoodsCart',function()
+    Chat("Buying FoodsCart, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyFoodCart()
+    follow = true
+end)
+
+Create('Buy! OrangePhone',function()
+    Chat("Buying OrangePhone, "..CustomName.."!")
+    Stop()
+    noclip = true
+    
+    follow = true
+end)
+
+Create('Buy! CrossBow',function()
+    Chat("Buying CrossBow, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyCross()
+    follow = true
+end)
+
+Create('Buy! Tele',function()
+    Chat("Buying Tele, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyTele()
+    follow = true
+end)
+
+Create('Buy! iPhone',function()
+    Chat("Buying iPhone, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyiPhone()
+    follow = true
+end)
+
+Create('Buy! AntiBodies',function()
+    Chat("Buying AntiBodies, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyAnti()
+    follow = true
+end)
+
+Create('Buy! Camera',function()
+    Chat("Buying Camera, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyCamera()
+    follow = true
+end)
+
+Create('Buy! Flashlight',function()
+    Chat("Buying FlashLight, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyFlash()
+    follow = true
+end)
+
+Create('Buy! Flowers',function()
+    Chat("Buying Flowers, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyFlower()
     follow = true
 end)
