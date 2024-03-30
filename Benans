@@ -1130,14 +1130,6 @@ end)
 Create('BMask!',function()
     Chat("Hiding My Username, "..CustomName.."!")
     Stop()
-    if STAND.Backpack:FindFirstChild("[Mask]") then
-    STAND.Character:FindFirstChild('[Mask]'):Activate()
-    getHumanoid(STAND):UnequipTools()
-    noclip = true
-    follow = true
-    if not STAND.Backpack:FindFirstChild("[Mask]") then
-    Chat("Hiding My Username, "..CustomName.."!")
-    Stop()
     noclip = true
     MaskBHide()
     follow = true
