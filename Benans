@@ -1,5 +1,15 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
 
+function BuyHammer()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[SledgeHammer] - $371'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[SledgeHammer] - $371'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[SledgeHammer]")
+    STAND.Backpack:FindFirstChild('[SledgeHammer]').Parent = STAND.Character
+end
+
 function BuyShovel()
 Stop()
     noclip = true
