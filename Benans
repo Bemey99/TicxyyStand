@@ -16,8 +16,8 @@ Stop()
     repeat rs.Stepped:Wait()
         getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[LockPicker] - $106'].Head.CFrame*CFrame.new(0,-5,0)
         fireclickdetector(game.Workspace.Ignored.Shop['[LockPicker] - $106'].ClickDetector)
-    until STAND.Backpack:FindFirstChild("[LockPick]")
-    STAND.Backpack:FindFirstChild('[LockPick]').Parent = STAND.Character
+    until STAND.Backpack:FindFirstChild("[LockPicker]")
+    STAND.Backpack:FindFirstChild('[LockPicker]').Parent = STAND.Character
 end
 
 function BuyLemon()
@@ -360,7 +360,7 @@ Create('Buy! PepperSpray',function()
     follow = true
 end)
 
-Create('Buy! LockPicker',function()
+Create('Buy! LockPick',function()
     Chat("Buying LockPick, "..CustomName.."!")
     Stop()
     noclip = true
