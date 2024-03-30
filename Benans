@@ -447,3 +447,7 @@ Create('AutoBuy! Lettuce',function()
     lettucefarm = true
     Chat("AutoBuying Lettuce, "..CustomName.."!")
 end)
+
+Arg("Redeem!", function()
+    game.ReplicatedStorage.MainEvent:FireServer("EnterPromoCode",Arg)
+end)
