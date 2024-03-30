@@ -1,5 +1,15 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
 
+function BuyKey()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Key] - $133'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Key] - $133'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Key]")
+    STAND.Backpack:FindFirstChild('[Key]').Parent = STAND.Character
+end
+
 function BuyKnife()
     noclip = true
     repeat rs.Stepped:Wait()
