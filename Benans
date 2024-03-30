@@ -138,15 +138,19 @@ Create("A!",function()
 end)
 
 Create('CW!',function()
+    if ChatCmds == true then
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Joining Crew!', 'All');
+    end
     wait(1)
-    game.ReplicatedStorage.MainEvent:FireServer("JoinCrew",CrewID) 
+    game.ReplicatedStorage.MainEvent:FireServer("JoinCrew",CrewID)
     wait(1)
-    game.ReplicatedStorage.MainEvent:FireServer("JoinCrew",CrewID) 
+    game.ReplicatedStorage.MainEvent:FireServer("JoinCrew",CrewID)
 end)
 
 Create('UnCW!',function()
+    if ChatCmds == true then
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Leaving Crew!', 'All');
+    end
     wait(.2)
     game.ReplicatedStorage.MainEvent:FireServer("LeaveCrew")
 end)
@@ -154,28 +158,36 @@ end)
 Create('SumAud!',function()
     SummonAudio()
     wait(.3)
+    if ChatCmds == true then
     Chat('Started Summon Audio!')
+    end
     wait(6)
+    if ChatCmds == true then
     Chat('Finished Summon Audio!')
 end)
 
 Create('Pose1',function()
     pose1(1)
+    if ChatCmds == true then
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Set Posture To Posture3 "..CustomName.."!", 'All');
 end)
 
 Create('Pose2',function()
     pose2(1)
+    if ChatCmds == true then
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Set Posture To Posture2 "..CustomName.."!", 'All');
 end)
 
 Create('Pose3',function()
     pose3(1)
+    if ChatCmds == true then
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Set Posture To Posture3 "..CustomName.."!", 'All');
 end)
 
 Create('.Glitch',function()
+    if ChatCmds == true then
     Chat("Attempting To Glitch Target!")
+    end
     Stop()
     Reset()
     wait(1)
@@ -186,7 +198,9 @@ Create('.Glitch',function()
 end)
 
 Create("HY!",function()
+  if ChatCmds == true then
   Chat("Attack Set To Heavy "..CustomName.."!")
+   end
     if Sounds == true then
         play(8655611378,true,true) 
     end
@@ -194,7 +208,9 @@ Create("HY!",function()
 end)
 
 Create("LT!",function()
+  if ChatCmds == true then
   Chat("Attack Set To Light "..CustomName.."!")
+   end
     if Sounds == true then
         play(8655611378,true,true) 
     end
@@ -205,11 +221,14 @@ Create('Summon!',function()
     Summon()
     SummonAudio()
     wait(.3)
+    if ChatCmds == true then
     Chat("I'm Here, "..CustomName.."!")
 end)
 
 Create('Disappear!',function()
+   if ChatCmds == true then
     Chat("Disappearing")
+    end
     wait(.2)
     Vanish()
 end)
