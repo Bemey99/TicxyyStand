@@ -209,5 +209,7 @@ Create('Summon!',function()
 end)
 
 Create('Disappear!',function()
+    Chat("Disappearing")
+    wait(.2)
     Vanish()
 end)
