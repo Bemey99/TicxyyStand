@@ -189,6 +189,9 @@ Create("LT!",function()
     Attack = "Light"
 end)
 
-Arg("Talk!", function()
-    Chat(""..Arg.."")
+Create('Summon!',function()
+    Summon()
+    SummonAudio()
+    wait(.3)
+    Chat("I'm Here, "..CustomName.."!")
 end)
