@@ -426,3 +426,19 @@ Create('Buy! Popcorn',function()
     BuyPopc()
     follow = true
 end)
+
+Create('Buy! MoneyGun',function()
+    Chat("Buying Money Gun, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyMoneyG()
+    follow = true
+end)
+
+Create('Buy! FireWork',function()
+    Chat("Buying FireWork, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyFireW()
+    follow = true
+end)
