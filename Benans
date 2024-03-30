@@ -749,11 +749,13 @@ Create('Buy! AR',function()
     follow = true
 end)
 
-Create('Buy! SilencerAR',function()
+Create('Buy! SilentAR',function()
     Chat("Buying SilencerAR, "..CustomName.."!")
     Stop()
     noclip = true
     BuySilentAR()
+    wait(1.2)
+    BuySilentARAmmo()
     follow = true
 end)
 
