@@ -1,5 +1,66 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
 
+function BuyAK()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[AK47] - $2387'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[AK47] - $2387'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[AK47]")
+    STAND.Backpack:FindFirstChild('[AK47]').Parent = STAND.Character
+end
+
+function BuyDB()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Double-Barrel SG] - $1485'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Double-Barrel SG] - $1485'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Double-Barrel SG]")
+    STAND.Backpack:FindFirstChild('[Double-Barrel SG]').Parent = STAND.Character
+end
+
+function BuySMG()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[SMG] - $796'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[SMG] - $796'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[SMG]")
+    STAND.Backpack:FindFirstChild('[SMG]').Parent = STAND.Character
+end
+
+
+function BuyShot()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Shotgun] - $1326'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Shotgun] - $1326'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Shotgun]")
+    STAND.Backpack:FindFirstChild('[Shotgun]').Parent = STAND.Character
+end
+
+function BuyAR()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[AR] - $1061'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[AR] - $1061'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[AR]")
+    STAND.Backpack:FindFirstChild('[AR]').Parent = STAND.Character
+end
+
+function BuySilent()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Silencer] - $583'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Silencer] - $583'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Silencer]")
+    STAND.Backpack:FindFirstChild('[Silencer]').Parent = STAND.Character
+end
+
 function BuyHammer()
 Stop()
     noclip = true
@@ -581,5 +642,53 @@ Create('Buy! Hammer',function()
     Stop()
     noclip = true
     BuyHammer()
+    follow = true
+end)
+
+Create('Buy! ShotGun',function()
+    Chat("Buying Shotgun, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyShot()
+    follow = true
+end)
+
+Create('Buy! SMG',function()
+    Chat("Buying SMG, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuySMG()
+    follow = true
+end)
+
+Create('Buy! DB',function()
+    Chat("Buying DB, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyDB()
+    follow = true
+end)
+
+Create('Buy! AK47',function()
+    Chat("Buying AK47, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyAK()
+    follow = true
+end)
+
+Create('Buy! Silencer',function()
+    Chat("Buying Silencer, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuySilent()
+    follow = true
+end)
+
+Create('Buy! AR',function()
+    Chat("Buying AR, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyAR()
     follow = true
 end)
