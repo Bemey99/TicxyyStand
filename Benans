@@ -1,13 +1,15 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
 
-function BuyMed()
+function BuyBat()
 Stop()
     noclip = true
     repeat rs.Stepped:Wait()
-        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Medium Armor] - $1061'].Head.CFrame*CFrame.new(0,-5,0)
-        fireclickdetector(game.Workspace.Ignored.Shop['[Medium Armor] - $1061'].ClickDetector)
-    until game.Players.LocalPlayer.Character.BodyEffects.Armor == true
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Bat] - $292'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Bat] - $292'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Bat]")
+    STAND.Backpack:FindFirstChild('[Bat]').Parent = STAND.Character
 end
+
 
 function BuyKey()
 Stop()
@@ -286,10 +288,10 @@ Create('Buy! Key',function()
     follow = true
 end)
 
-Create('Buy! MedArmor',function()
-    Chat("Buying Med Armor, "..CustomName.."!")
+Create('Buy! Bat',function()
+    Chat("Buying Bat, "..CustomName.."!")
     Stop()
     noclip = true
-    BuyMed()
+    BuyBat()
     follow = true
 end)
