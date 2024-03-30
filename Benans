@@ -185,22 +185,3 @@ Create("LT!",function()
     end
     Attack = "Light"
 end)
-
-Create("/enable gkill",function()
-    Chat("Gun Killing All Players Near You, "..CustomName.."!")
-    Stop()
-    if Sounds == true then
-        play(8655611378,true,true) 
-    end	
-    noclip = true
-    gunnear = true
-end)
-
-Create("/disable gkill",function()
-    Stop()
-    if Sounds == true then
-        play(8655611378,true,true) 
-    end	
-    noclip = true
-    follow = true
-end)
