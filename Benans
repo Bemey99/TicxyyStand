@@ -1,5 +1,15 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
 
+function BuyTear()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[TearGas] - $5305'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[TearGas] - $5305'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[TearGas]")
+    STAND.Backpack:FindFirstChild('[TearGas]').Parent = STAND.Character
+end
+
 function BuyBat()
 Stop()
     noclip = true
@@ -293,5 +303,13 @@ Create('Buy! Bat',function()
     Stop()
     noclip = true
     BuyBat()
+    follow = true
+end)
+
+Create('Buy! TearGas,function()
+    Chat("Buying TearGas, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyTear()
     follow = true
 end)
