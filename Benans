@@ -219,3 +219,23 @@ Create('BXIG!',function()
     noclip = true
     boxing = true
 end)
+
+Create('Unblorck!',function()
+    Stop()
+    blocking = false
+    Bind = false
+    noclip = true
+    game.ReplicatedStorage.MainEvent:FireServer("LeaveCrew")
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = getRoot(OWNER).CFrame*CFrame.new(0,0,-10.85)
+    until KO(STAND).Value == true
+    Invisible()
+    follow = true
+    repeat rs.Stepped:Wait() until KO(STAND).Value == false
+    Chat('Hand weld successfully removed.')
+    wait(1)
+    game.ReplicatedStorage.MainEvent:FireServer("JoinCrew",CrewID) 
+    wait(1)
+    game.ReplicatedStorage.MainEvent:FireServer("JoinCrew",CrewID) 
+end)
+end)
