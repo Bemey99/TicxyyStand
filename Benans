@@ -1,18 +1,5 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
 
-function Hide()
-    if StopHoverAnim == false then
-        getHumanoid(STAND):UnequipTools()
-        repeat rs.Stepped:Wait()
-            getRoot(STAND).CFrame=game.Workspace.Ignored.Shop["[Surgeon Mask] - $27"].Head.CFrame*CFrame.new(0,-5,0)
-            fireclickdetector(game.Workspace.Ignored.Shop["[Surgeon Mask] - $27"].ClickDetector)
-        until STAND.Backpack:FindFirstChild("[Mask]")
-        STAND.Backpack:FindFirstChild("[Mask]").Parent = STAND.Character
-        STAND.Character:FindFirstChild('[Mask]'):Activate()
-        getHumanoid(STAND):UnequipTools()
-    end
-end	
-
 Create('Сосk!',function()
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Want To See My Сосk 😏 🤫', 'All');
 end)
@@ -202,8 +189,6 @@ Create("LT!",function()
     Attack = "Light"
 end)
 
-Create('Mask!',function()
-   Chat("Buying Mask!")
-   wait(.2)
-   Hide()
+Arg("Talk!", function()
+    Chat(""..Arg.."")
 end)
