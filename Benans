@@ -1,5 +1,24 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
 
+function BuyDb()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Double-Barrel SG] - $1432'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Double-Barrel SG] - $1432'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Double-Barrel SG]")
+    STAND.Backpack:FindFirstChild('[Double-Barrel SG]').Parent = STAND.Character
+   getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['18 [Double-Barrel SG Ammo] - $53'].Head.CFrame*CFrame.new(0,-5,0]
+   fireclickdetector(game.Workspace.Ignored.Shop['18 [Double-Barrel SG Ammo] - $53'].ClickDetector)
+   fireclickdetector(game.Workspace.Ignored.Shop['18 [Double-Barrel SG Ammo] - $53'].ClickDetector) wait(1)
+   fireclickdetector(game.Workspace.Ignored.Shop['18 [Double-Barrel SG Ammo] - $53'].ClickDetector) wait(1)
+   fireclickdetector(game.Workspace.Ignored.Shop['18 [Double-Barrel SG Ammo] - $53'].ClickDetector) wait(1)
+   fireclickdetector(game.Workspace.Ignored.Shop['18 [Double-Barrel SG Ammo] - $53'].ClickDetector) wait(1)
+   fireclickdetector(game.Workspace.Ignored.Shop['18 [Double-Barrel SG Ammo] - $53'].ClickDetector) wait(1)
+   fireclickdetector(game.Workspace.Ignored.Shop['18 [Double-Barrel SG Ammo] - $53'].ClickDetector)
+  follow = true
+end)
+
 function BuyKey()
 Stop()
     noclip = true
@@ -274,5 +293,13 @@ Create('Buy! Key',function()
     Stop()
     noclip = true
     BuyKey()
+    follow = true
+end)
+
+Create('Buy! DB',function()
+    Chat("Buying DB, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyDb()
     follow = true
 end)
