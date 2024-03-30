@@ -213,3 +213,21 @@ Create('Disappear!',function()
     wait(.2)
     Vanish()
 end)
+
+Create('MS1!',function()
+    repeat rs.Stepped:Wait()
+            getRoot(STAND).CFrame = game.Workspace.Ignored.Shop["[Default Moveset] - $0"].Head.CFrame
+            fireclickdetector(game.Workspace.Ignored.Shop["[Default Moveset] - $0"].ClickDetector)
+        until STAND.DataFolder.Information.FightingStyle.Value == 'Default'
+        follow = true
+    end
+end)
+
+Create('MS2!',function()
+    repeat rs.Stepped:Wait()
+            getRoot(STAND).CFrame = game.Workspace.Ignored.Shop["[Advanced Moveset] - $0"].Head.CFrame
+            fireclickdetector(game.Workspace.Ignored.Shop["[Advanced Moveset] - $0"].ClickDetector)
+        until STAND.DataFolder.Information.FightingStyle.Value == 'Advanced'
+        follow = true
+    end
+end)
