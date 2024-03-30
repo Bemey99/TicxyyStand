@@ -1,5 +1,35 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
 
+function BuyPep()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[PepperSpray] - $159'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[PepperSpray] - $159'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[PepperSpray]")
+    STAND.Backpack:FindFirstChild('[PepperSpray]').Parent = STAND.Character
+end
+
+function BuyLock()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[LockPicker] - $106'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[LockPicker] - $106'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[LockPicket]")
+    STAND.Backpack:FindFirstChild('[LockPicker]').Parent = STAND.Character
+end
+
+function BuyLemon()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Lemonade] - $3'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Lemonade] - $3'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Lemonade]")
+    STAND.Backpack:FindFirstChild('[Lemonade]').Parent = STAND.Character
+end
+
 function BuyTear()
 Stop()
     noclip = true
@@ -311,5 +341,29 @@ Create('Buy! TearGas',function()
     Stop()
     noclip = true
     BuyTear()
+    follow = true
+end)
+
+Create('Buy! Lemonade',function()
+    Chat("Buying Lemonade, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyLemon()
+    follow = true
+end)
+
+Create('Buy! PepperSpray',function()
+    Chat("Buying PepperSpray, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyPep()
+    follow = true
+end)
+
+Create('Buy! LockPicker',function()
+    Chat("Buying LockPick, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyLock()
     follow = true
 end)
