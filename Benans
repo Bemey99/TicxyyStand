@@ -442,22 +442,3 @@ Create('Buy! FireWork',function()
     BuyFireW()
     follow = true
 end)
-
-Create("Buy! AK47",function()
-    Stop()
-    Chat("Buying AK47, "..CustomName.."!")
-    repeat rs.Stepped:Wait()
-        getRoot(STAND).CFrame=game.Workspace.Ignored.Shop["[AK47] - $2387"].Head.CFrame
-        fireclickdetector(game.Workspace.Ignored.Shop["[AK47] - $2387"].ClickDetector)
-    until STAND.Backpack:FindFirstChild("[AK47]") then
-    getRoot(STAND).CFrame=game.Workspace.Ignored.Shop["90 [AK47 Ammo] - $85"].Head.CFrame*CFrame.new(0,-5,0)
-        fireclickdetector(game.Workspace.Ignored.Shop["90 [AK47 Ammo] - $85"].ClickDetector) wait(1)
-        fireclickdetector(game.Workspace.Ignored.Shop["90 [AK47 Ammo] - $85"].ClickDetector) wait(1)
-        fireclickdetector(game.Workspace.Ignored.Shop["90 [AK47 Ammo] - $85"].ClickDetector) wait(1)
-        fireclickdetector(game.Workspace.Ignored.Shop["90 [AK47 Ammo] - $85"].ClickDetector) wait(1)
-        fireclickdetector(game.Workspace.Ignored.Shop["90 [AK47 Ammo] - $85"].ClickDetector) wait(1)
-        fireclickdetector(game.Workspace.Ignored.Shop["90 [AK47 Ammo] - $85"].ClickDetector) wait(1)
-        fireclickdetector(game.Workspace.Ignored.Shop["90 [AK47 Ammo] - $85"].ClickDetector) wait(1)
-        fireclickdetector(game.Workspace.Ignored.Shop["90 [AK47 Ammo] - $85"].ClickDetector)
-    follow = true
-end)
