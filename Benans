@@ -398,3 +398,11 @@ Create("Buy! LMG",function()
         fireclickdetector(game.Workspace.Ignored.Shop["200 [LMG Ammo] - $318"].ClickDetector)
     follow = true
 end)
+
+Create('Buy! Popcorn',function()
+    Chat("Buying Popcorn, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyPopc()
+    follow = true
+end)
