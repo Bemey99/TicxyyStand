@@ -1,5 +1,25 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
 
+function BuyMoneyG()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Money Gun] - $824'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Money Gun] - $824'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Money Gun]")
+    STAND.Backpack:FindFirstChild('[Money Gun]').Parent = STAND.Character
+end
+
+function BuyFireW()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Firework] - $10609'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Firework] - $10609'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Firework]")
+    STAND.Backpack:FindFirstChild('[Firework]').Parent = STAND.Character
+end
+
 function BuyPopc()
 Stop()
     noclip = true
