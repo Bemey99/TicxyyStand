@@ -223,3 +223,54 @@ Create('BXIG!',function()
     noclip = true
     boxing = true
 end)
+
+Create('To Bank!',function()
+    game.ReplicatedStorage.MainEvent:FireServer("LeaveCrew")
+ 
+		wait()
+ 
+		noclip = false
+		Block = false
+		mimic = false
+		vanish = false
+		killtheplayer = false
+		barragepos = false
+		killnear = false
+		barragepunch = false
+		follow = false
+		evolvefollow = false
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game:GetService("Players")[StandOwner].Character.UpperTorso.Position) * CFrame.new(0,1,0)
+		if game.Players.LocalPlayer.Backpack:FindFirstChild("Combat") then
+			game.Players.LocalPlayer.Backpack:FindFirstChild("Combat").Parent = game.Players.LocalPlayer.Character
+		end
+		wait()
+		game.Players.LocalPlayer.Character:FindFirstChild('Combat'):Activate()
+		wait(5)
+ 
+		repeat wait()
+			if game.Players[StandOwner].Character.BodyEffects["K.O"].Value == true then
+ 
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game:GetService("Players")[StandOwner].Character.UpperTorso.Position) * CFrame.new(0,1,0)
+				wait(.4)
+				game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
+				wait(.4)
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-445.48233032227, 39.001861572266, -284.55798339844)
+				wait(1.5)
+				game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
+ 
+			end
+ 
+			if game.Players[StandOwner].Character.BodyEffects["K.O"].Value == false then
+ 
+				noclip = true
+				follow = true
+			end
+		until game.Players[StandOwner].Character.BodyEffects["K.O"].Value == false	
+ 
+		wait()
+ 
+		game.ReplicatedStorage.MainEvent:FireServer("JoinCrew",CrewID) 
+ 
+ 
+	end    
+end)
