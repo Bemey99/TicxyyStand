@@ -13,8 +13,8 @@ function BuyPitch()
     Stop()
     noclip = true
     repeat rs.Stepped:Wait()
-        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Pitchfork] - $330'].Head.CFrame*CFrame.new(0,-5,0)
-        fireclickdetector(game.Workspace.Ignored.Shop['[Pitchfork] - $330'].ClickDetector)
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Pitchfork] - $339'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Pitchfork] - $339'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[Pitchfork]")
     STAND.Backpack:FindFirstChild('[Pitchfork]').Parent = STAND.Character
 end
