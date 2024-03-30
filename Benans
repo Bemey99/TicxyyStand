@@ -575,3 +575,11 @@ Create('Buy! StopSign',function()
     BuyStopSign()
     follow = true
 end)
+
+Create('Buy! Hammer',function()
+    Chat("Buying Hammer, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyHammer()
+    follow = true
+end)
