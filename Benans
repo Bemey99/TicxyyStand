@@ -1,23 +1,14 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
 
-function BuyDb()
+function BuyMed()
 Stop()
     noclip = true
     repeat rs.Stepped:Wait()
-        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Double-Barrel SG] - $1432'].Head.CFrame*CFrame.new(0,-5,0)
-        fireclickdetector(game.Workspace.Ignored.Shop['[Double-Barrel SG] - $1432'].ClickDetector)
-    until STAND.Backpack:FindFirstChild("[Double-Barrel SG]")
-    STAND.Backpack:FindFirstChild('[Double-Barrel SG]').Parent = STAND.Character
-   getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['18 [Double-Barrel SG Ammo] - $53'].Head.CFrame*CFrame.new(0,-5,0]
-   fireclickdetector(game.Workspace.Ignored.Shop['18 [Double-Barrel SG Ammo] - $53'].ClickDetector)
-   fireclickdetector(game.Workspace.Ignored.Shop['18 [Double-Barrel SG Ammo] - $53'].ClickDetector) wait(1)
-   fireclickdetector(game.Workspace.Ignored.Shop['18 [Double-Barrel SG Ammo] - $53'].ClickDetector) wait(1)
-   fireclickdetector(game.Workspace.Ignored.Shop['18 [Double-Barrel SG Ammo] - $53'].ClickDetector) wait(1)
-   fireclickdetector(game.Workspace.Ignored.Shop['18 [Double-Barrel SG Ammo] - $53'].ClickDetector) wait(1)
-   fireclickdetector(game.Workspace.Ignored.Shop['18 [Double-Barrel SG Ammo] - $53'].ClickDetector) wait(1)
-   fireclickdetector(game.Workspace.Ignored.Shop['18 [Double-Barrel SG Ammo] - $53'].ClickDetector)
-  follow = true
-end)
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Medium Armor] - $1061'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Medium Armor] - $1061'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[MediumArmor]")
+    STAND.Backpack:FindFirstChild('[MediumArmor]').Parent = STAND.Character
+end
 
 function BuyKey()
 Stop()
@@ -296,10 +287,10 @@ Create('Buy! Key',function()
     follow = true
 end)
 
-Create('Buy! DB',function()
-    Chat("Buying DB, "..CustomName.."!")
+Create('Buy! MedArmor',function()
+    Chat("Buying Med Armor, "..CustomName.."!")
     Stop()
     noclip = true
-    BuyDb()
+    BuyMed()
     follow = true
 end)
