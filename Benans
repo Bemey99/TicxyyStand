@@ -205,7 +205,7 @@ Create("LT!",function()
     Attack = "Light"
 end)
 
-Create('/heal',function()
+Create('SHeal!',function()
    Chat("Healing!")
     HealMe()
    wait(5)
