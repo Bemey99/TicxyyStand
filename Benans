@@ -1,5 +1,20 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
 
+function BuySilentARAmmo()
+Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['25 [SilencerAR Ammo] - $53'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['25 [SilencerAR Ammo] - $53'].ClickDetector) wait(1)
+        fireclickdetector(game.Workspace.Ignored.Shop['25 [SilencerAR Ammo] - $53'].ClickDetector) wait(1)
+        fireclickdetector(game.Workspace.Ignored.Shop['25 [SilencerAR Ammo] - $53'].ClickDetector) wait(1)
+        fireclickdetector(game.Workspace.Ignored.Shop['25 [SilencerAR Ammo] - $53'].ClickDetector) wait(1)
+        fireclickdetector(game.Workspace.Ignored.Shop['25 [SilencerAR Ammo] - $53'].ClickDetector) wait(1)
+        fireclickdetector(game.Workspace.Ignored.Shop['25 [SilencerAR Ammo] - $53'].ClickDetector) wait(1)
+        fireclickdetector(game.Workspace.Ignored.Shop['25 [SilencerAR Ammo] - $53'].ClickDetector) wait(1)
+        fireclickdetector(game.Workspace.Ignored.Shop['25 [SilencerAR Ammo] - $53'].ClickDetector)
+end
+
 function BuySilentAR()
 Stop()
     noclip = true
