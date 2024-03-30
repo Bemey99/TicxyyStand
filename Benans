@@ -1,5 +1,17 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
 
+function Vanish()
+    Stop()
+    noclip = true
+    MoveTo(-0.2,-10,1.4)
+    wait(0.250)
+    if getRoot(STAND):FindFirstChildWhichIsA("BodyPosition") then
+        getRoot(STAND):FindFirstChildWhichIsA("BodyPosition"):Destroy()
+    end
+    getRoot(STAND).CFrame = getRoot(OWNER).CFrame*CFrame.new(0,-100,0)
+    vanish = true
+end
+
 Create('Сосk!',function()
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Want To See My Сосk 😏 🤫', 'All');
 end)
@@ -194,4 +206,8 @@ Create('Summon!',function()
     SummonAudio()
     wait(.3)
     Chat("I'm Here, "..CustomName.."!")
+end)
+
+Create('Disappear!',function()
+    Vanish()
 end)
