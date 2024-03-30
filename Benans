@@ -6,8 +6,7 @@ Stop()
     repeat rs.Stepped:Wait()
         getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Medium Armor] - $1061'].Head.CFrame*CFrame.new(0,-5,0)
         fireclickdetector(game.Workspace.Ignored.Shop['[Medium Armor] - $1061'].ClickDetector)
-    until STAND.Backpack:FindFirstChild("[MediumArmor]")
-    STAND.Backpack:FindFirstChild('[MediumArmor]').Parent = STAND.Character
+    until game.Players.LocalPlayer.Character.BodyEffects.Armor = true
 end
 
 function BuyKey()
