@@ -442,3 +442,8 @@ Create('Buy! FireWork',function()
     BuyFireW()
     follow = true
 end)
+
+Create('AutoBuy! Lettuce',function()
+    lettucefarm = true
+    Chat("AutoBuying Lettuce, "..CustomName.."!")
+end)
