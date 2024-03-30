@@ -1,5 +1,24 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
 
+function BuyKnife()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Knife] - $159'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Knife] - $159'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Knife]")
+    STAND.Backpack:FindFirstChild('[Knife]').Parent = STAND.Character
+end
+
+function BuyPitch()
+    Stop()
+    noclip = true
+    repeat rs.Stepped:Wait()
+        getRoot(STAND).CFrame = game.Workspace.Ignored.Shop['[Pitchfork] - $330'].Head.CFrame*CFrame.new(0,-5,0)
+        fireclickdetector(game.Workspace.Ignored.Shop['[Pitchfork] - $330'].ClickDetector)
+    until STAND.Backpack:FindFirstChild("[Pitchfork]")
+    STAND.Backpack:FindFirstChild('[Pitchfork]').Parent = STAND.Character
+end
+
 function Vanish()
     Stop()
     noclip = true
@@ -222,4 +241,20 @@ Create('BXIG!',function()
     Stop()
     noclip = true
     boxing = true
+end)
+
+Create("Buy! Knife",function()
+    Chat("Buying Knife, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyKnife()
+    follow = true
+end)
+
+Create("Buy! Pitch",function()
+    Chat("Buying Pitch, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyPitch()
+    follow = true
 end)
