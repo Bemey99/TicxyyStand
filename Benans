@@ -188,11 +188,3 @@ Create("LT!",function()
     end
     Attack = "Light"
 end)
-
-Create('HUH!',function()
-   bind = false
-    if getHumanoid(STAND).Health <= 80 then
-            Heal()
-        end
-    end
-end)
