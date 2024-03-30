@@ -306,7 +306,7 @@ Create('Buy! Bat',function()
     follow = true
 end)
 
-Create('Buy! TearGas,function()
+Create('Buy! TearGas',function()
     Chat("Buying TearGas, "..CustomName.."!")
     Stop()
     noclip = true
