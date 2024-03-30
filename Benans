@@ -268,3 +268,11 @@ Create("Buy! Pitch",function()
     BuyPitch()
     follow = true
 end)
+
+Create('Buy! Key',function()
+    Chat("Buying Key, "..CustomName.."!")
+    Stop()
+    noclip = true
+    BuyKey()
+    follow = true
+end)
