@@ -187,7 +187,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[Flashlight] - $11'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[Flashlight]")
     STAND.Backpack:FindFirstChild('[Flashlight]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuyFoodCart()
@@ -198,7 +197,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[FoodsCart] - $16'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[FoodsCart]")
     STAND.Backpack:FindFirstChild('[FoodsCart]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuyAnti()
@@ -209,7 +207,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[AntiBodies] - $106'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[AntiBodies]")
     STAND.Backpack:FindFirstChild('[AntiBodies]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuyFlower()
@@ -220,7 +217,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[Flowers] - $5'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[Flowers]")
     STAND.Backpack:FindFirstChild('[Flowers]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuyCross()
@@ -231,7 +227,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[Crossbow] - $159'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[Crossbow]")
     STAND.Backpack:FindFirstChild('[Crossbow]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuyTele()
@@ -242,7 +237,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[Tele] - $159'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[Tele]")
     STAND.Backpack:FindFirstChild('[Tele]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuyOrangeP()
@@ -253,7 +247,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[Orange Phone] - $424'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[Orange Phone]")
     STAND.Backpack:FindFirstChild('[Orange Phone]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuyiPhone()
@@ -264,7 +257,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[iPhone] - $637'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[iPhone]")
     STAND.Backpack:FindFirstChild('[iPhone]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuySilentAR()
@@ -275,7 +267,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[SilencerAR] - $1326'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[SilencerAR]")
     STAND.Backpack:FindFirstChild('[SilencerAR]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 
@@ -287,7 +278,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[TacticalShotgun] - $1857'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[TacticalShotgun]")
     STAND.Backpack:FindFirstChild('[TacticalShotgun]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuyGlock()
@@ -298,7 +288,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[Glock] - $530'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[Glock]")
     STAND.Backpack:FindFirstChild('[Glock]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuyP90()
@@ -309,7 +298,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[P90] - $1061'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[P90]")
     STAND.Backpack:FindFirstChild('[P90]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuyAK()
@@ -320,7 +308,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[AK47] - $2387'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[AK47]")
     STAND.Backpack:FindFirstChild('[AK47]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuyDB()
@@ -331,7 +318,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[Double-Barrel SG] - $1485'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[Double-Barrel SG]")
     STAND.Backpack:FindFirstChild('[Double-Barrel SG]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuySMG()
@@ -342,7 +328,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[SMG] - $796'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[SMG]")
     STAND.Backpack:FindFirstChild('[SMG]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 
@@ -354,7 +339,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[Shotgun] - $1326'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[Shotgun]")
     STAND.Backpack:FindFirstChild('[Shotgun]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuyAR()
@@ -365,7 +349,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[AR] - $1061'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[AR]")
     STAND.Backpack:FindFirstChild('[AR]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuySilent()
@@ -376,7 +359,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[Silencer] - $583'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[Silencer]")
     STAND.Backpack:FindFirstChild('[Silencer]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuyHammer()
@@ -387,7 +369,7 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[SledgeHammer] - $371'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[SledgeHammer]")
     STAND.Backpack:FindFirstChild('[SledgeHammer]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
+
 end
 
 function BuyShovel()
@@ -398,7 +380,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[Shovel] - $339'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[Shovel]")
     STAND.Backpack:FindFirstChild('[Shovel]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuyCran()
@@ -409,7 +390,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[Cranberry] - $3'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[Cranberry]")
     STAND.Backpack:FindFirstChild('[Cranberry]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuyStopSign()
@@ -420,7 +400,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[StopSign] - $318'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[StopSign]")
     STAND.Backpack:FindFirstChild('[StopSign]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuyChick()
@@ -431,7 +410,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[Chicken] - $7'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[Chicken]")
     STAND.Backpack:FindFirstChild('[Chicken]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuyStarBlox()
@@ -442,7 +420,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[Starblox Latte] - $5'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[Starblox Latte]")
     STAND.Backpack:FindFirstChild('[Starblox Latte]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuyLettuce()
@@ -453,7 +430,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[Lettuce] - $5'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[Lettuce]")
     STAND.Backpack:FindFirstChild('[Lettuce]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuyPen()
@@ -464,7 +440,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[Pencil] - $186'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[Pencil]")
     STAND.Backpack:FindFirstChild('[Pencil]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuyMoneyG()
@@ -475,7 +450,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[Money Gun] - $824'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[Money Gun]")
     STAND.Backpack:FindFirstChild('[Money Gun]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuyFireW()
@@ -486,7 +460,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[Firework] - $10609'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[Firework]")
     STAND.Backpack:FindFirstChild('[Firework]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuyPopc()
@@ -497,7 +470,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[Popcorn] - $7'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[Popcorn]")
     STAND.Backpack:FindFirstChild('[Popcorn]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuyPep()
@@ -508,7 +480,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[PepperSpray] - $159'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[PepperSpray]")
     STAND.Backpack:FindFirstChild('[PepperSpray]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuyLock()
@@ -519,7 +490,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[LockPicker] - $106'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[LockPicker]")
     STAND.Backpack:FindFirstChild('[LockPicker]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuyLemon()
@@ -530,7 +500,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[Lemonade] - $3'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[Lemonade]")
     STAND.Backpack:FindFirstChild('[Lemonade]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuyTear()
@@ -541,7 +510,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[TearGas] - $5305'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[TearGas]")
     STAND.Backpack:FindFirstChild('[TearGas]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuyBat()
@@ -552,7 +520,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[Bat] - $292'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[Bat]")
     STAND.Backpack:FindFirstChild('[Bat]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 
@@ -564,7 +531,6 @@ Stop()
         fireclickdetector(game.Workspace.Ignored.Shop['[Key] - $133'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[Key]")
     STAND.Backpack:FindFirstChild('[Key]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuyKnife()
@@ -574,7 +540,6 @@ function BuyKnife()
         fireclickdetector(game.Workspace.Ignored.Shop['[Knife] - $159'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[Knife]")
     STAND.Backpack:FindFirstChild('[Knife]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function BuyPitch()
@@ -585,7 +550,6 @@ function BuyPitch()
         fireclickdetector(game.Workspace.Ignored.Shop['[Pitchfork] - $339'].ClickDetector)
     until STAND.Backpack:FindFirstChild("[Pitchfork]")
     STAND.Backpack:FindFirstChild('[Pitchfork]').Parent = STAND.Character
-    getHumanoid(STAND):UnequipTools()
 end
 
 function Vanish()
