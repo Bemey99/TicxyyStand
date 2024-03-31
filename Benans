@@ -1149,7 +1149,7 @@ Create('Buy! SMask',function()
     Chat("Buying SMask, "..CustomName.."!")
     Stop()
     noclip = true
-    BuySMask
+    BuySMask()
     follow = true
 end)
 
