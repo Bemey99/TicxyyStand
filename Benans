@@ -760,8 +760,8 @@ end)
 Create('Summon!',function()
     Summon()
     SummonAudio()
-    wait(.3)
-    Chat("I'm Here, "..CustomName.."!")
+    wait(3)
+    Chat("Who Dare Summon Me?")
 end)
 
 Create('Disappear!',function()
@@ -770,7 +770,7 @@ Create('Disappear!',function()
     Vanish()
 end)
 
-Create('BXIG!',function()
+Create('BXING!',function()
     Stop()
     noclip = true
     boxing = true
@@ -1214,4 +1214,8 @@ Create('Unmask!',function()
     STAND.Backpack:FindFirstChild('[Mask]').Parent = STAND.Character
     STAND.Character:FindFirstChild('[Mask]'):Activate()
    getHumanoid(STAND):UnequipTools()
+end)
+
+Create('?checkvpx',function()
+  Chat("vpх іѕ сurrеntlу.. Сummіng")
 end)
