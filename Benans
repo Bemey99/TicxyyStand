@@ -1219,3 +1219,29 @@ end)
 Create('?checkvpx',function()
   Chat("vpх іѕ сurrеntlу.. Сummіng")
 end)
+
+CreateTargetAbility("rk1=",function()
+    if TARGET then
+        Stop()
+        game.ReplicatedStorage.MainEvent:FireServer("LeaveCrew")
+        if STAND.Backpack:FindFirstChild("Combat") then STAND.Backpack:FindFirstChild("Combat").Parent = STAND.Character end
+        wait()
+        repeat rs.Stepped:Wait()
+            if KO(TARGET).Value == false then
+                game.ReplicatedStorage.MainEvent:FireServer("ChargeButton")
+                TargetMalee(TARGET)
+            end
+        until KO(TARGET).Value == true
+        noclip = false
+        STAND.Character:WaitForChild("Humanoid"):ChangeState(8)
+        getRoot(STAND).CFrame = getRoot(TARGET).CFrame*CFrame.new(0,500,0)
+        repeat wait() until Attacking(STAND).Value == false or follow == true
+        getRoot(STAND).CFrame = CFrame.new(getTorso(TARGET).Position)*CFrame.new(0,4,0)
+        wait(1)
+        game.ReplicatedStorage.MainEvent:FireServer("Grabbing",true)
+        wait(.2)
+        TARGET.Character.RightUpperArm.Position = Vector3.new(0,-1200,0)
+        wait(.5)
+        game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
+    end
+end)
