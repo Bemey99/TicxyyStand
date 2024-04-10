@@ -1,6 +1,6 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
 
-function ToBank
+function ToBank()
 game.ReplicatedStorage.MainEvent:FireServer("LeaveCrew")
  
 		wait()
@@ -1269,4 +1269,9 @@ end)
 
 Create('?checkvpx',function()
   Chat("vpх іѕ сurrеntlу.. Сummіng")
+end)
+
+Create('/tp bank',function()
+  ToBank()
+  Chat("Teleporting To Bank!")
 end)
