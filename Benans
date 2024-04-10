@@ -30,7 +30,7 @@ game.ReplicatedStorage.MainEvent:FireServer("LeaveCrew")
 				wait(.4)
 				game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
 				wait(.4)
-				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-726.136169, -39.6542053, -885.562744)
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-445.48233032227, 39.001861572266, -284.55798339844)
 				wait(1.5)
 				game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
  
