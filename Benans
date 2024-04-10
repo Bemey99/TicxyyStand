@@ -1,5 +1,56 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
 
+function ToBank
+game.ReplicatedStorage.MainEvent:FireServer("LeaveCrew")
+ 
+		wait()
+ 
+		noclip = false
+		Block = false
+		mimic = false
+		vanish = false
+		barragepos = false
+		killnear = false
+		killtheplayer = false
+		barragepunch = false
+		follow = false
+		evolvefollow = false
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game:GetService("Players")[StandOwner].Character.UpperTorso.Position) * CFrame.new(0,1,0)
+		if game.Players.LocalPlayer.Backpack:FindFirstChild("Combat") then
+			game.Players.LocalPlayer.Backpack:FindFirstChild("Combat").Parent = game.Players.LocalPlayer.Character
+		end
+		wait()
+		game.Players.LocalPlayer.Character:FindFirstChild('Combat'):Activate()
+		wait(5)
+ 
+		repeat wait()
+			if game.Players[StandOwner].Character.BodyEffects["K.O"].Value == true then
+ 
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game:GetService("Players")[StandOwner].Character.UpperTorso.Position) * CFrame.new(0,1,0)
+				wait(.4)
+				game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
+				wait(.4)
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-726.136169, -39.6542053, -885.562744)
+				wait(1.5)
+				game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
+ 
+			end
+ 
+			if game.Players[StandOwner].Character.BodyEffects["K.O"].Value == false then
+ 
+				noclip = true
+				follow = true
+			end
+		until game.Players[StandOwner].Character.BodyEffects["K.O"].Value == false	
+ 
+		wait()
+ 
+		game.ReplicatedStorage.MainEvent:FireServer("JoinCrew",CrewID) 
+ 
+ 
+	end    
+end)
+
 function BuySMask()
 Stop()
     noclip = true
