@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ticxyy/XD/main/V4.3"))()
+loadstring(game:HttpGet("https://xk5ng.github.io/V4.4"))()
 
 function BuySMask()
 Stop()
