@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://xk5ng.github.io/V4.5"))()
+loadstring(game:HttpGet("https://xk5ng.github.io/V4.6"))()
 
 function BuySMask()
 Stop()
@@ -564,17 +564,17 @@ function Vanish()
     vanish = true
 end
 
-Create('Сосk!',function()
+Create("Сосk!",function()
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Want To See My Сосk 😏 🤫', 'All');
 end)
 
-Create('Ban!',function()
+Create("Ban!",function()
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Perma-Ban in 20 Seconds.', 'All');
 wait(20)
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Joking!', 'All');
 end)
 
-Arg('L!',function()
+Arg("L!",function()
     local GetPlayer = gplr(Arg)
     if GetPlayer.Name == STAND.Name then
         if ChatCmds == true then
@@ -587,7 +587,7 @@ Arg('L!',function()
     end
 end)
 
-Arg('R!',function()
+Arg("R!",function()
     local GetPlayer = gplr(Arg)
     if GetPlayer.Name == STAND.Name then
         if ChatCmds == true then
@@ -600,7 +600,7 @@ Arg('R!',function()
     end
 end)
 
-Arg('B!',function()
+Arg("B!",function()
     local GetPlayer = gplr(Arg)
     if GetPlayer.Name == STAND.Name then
         if ChatCmds == true then
